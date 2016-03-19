@@ -33,6 +33,5 @@ HKEY_CLASSES_ROOT\\Python.CompiledFile\\shell\\open\\command\\(default)
 >>> from osgeo import gdalconst
 ```
  4. 其他python库安装，步骤类似：scipy，numexpr，PyQt4，wxPython（需要wxPython_common），PyGTK，python_dateutil，pytz，matplotlib，pywin32。。。
- 5. 
-- Ulipad 或 PyCharm
+ 5. PyCharm
 
