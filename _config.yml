@@ -33,16 +33,16 @@ paginate: 6
 #  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 highlighter: rouge
 markdown: kramdown
-# kramdown:
-   # input: GFM
-   # hard_wrap: false
-   # extensions:
-     # - autolink
-     # - footnotes
-     # - smart
-   # enable_coderay: true
-   # coderay:
-      # coderay_line_numbers: nil
+kramdown:
+    input: GFM
+    hard_wrap: false
+    extensions:
+      - autolink
+      - footnotes
+      - smart
+    enable_coderay: true
+    coderay:
+       coderay_line_numbers: nil
 gems: ['jekyll-paginate']
 timezone: Asia/Shanghai
 exclude: ['README.md', 'LICENSE']
