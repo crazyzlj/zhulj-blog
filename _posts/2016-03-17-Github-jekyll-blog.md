@@ -10,6 +10,7 @@ comments: true
 
 
 References:
+======
 
 - http://beiyuu.com/github-pages/
 
@@ -19,7 +20,9 @@ References:
 
 - https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
 
-# Step by step:
+Step by step:
+======
+
 1. **Install Jekyll on Windows**
 	+ 1.1 Install Chocolatey
 		+ Open a command prompt with Administrator access
