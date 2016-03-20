@@ -18,6 +18,7 @@ Implementation
 =====
 
 - **1.**   程序是2011年11月写的，当时使用的是`百度地图 API JS版 v1.2`，我测试了一下，虽然历经版本迭代更新，这个代码依然可用。图1为运行效果。
+
 ![2011-11-12-search-for-coordinates-based-on-baidumap-api.png](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/baidu-API-search-locations/2011-11-12-search-for-coordinates-based-on-baidumap-api.png)
 
 图1 基于百度地图模糊查询地名并返回经纬度坐标
