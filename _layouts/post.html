@@ -2,37 +2,35 @@
 
 <div class="container container-left">
     <div class="row">
-        <div class="col-md-3 hidden-xs">
+        <div class="col-lg-3 hidden-xs">
             {% include sidebar.html %}
         </div>
-        <div class="col-md-9">
-          <div class="article">
+        <div class="col-lg-">
+        <div class="article">
             <div class="well">
                 <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
 				{% include post-tags.html %}
             <div class="post-content">
             {{ content }}
             </div>
+			{% if page.comments %}
+			<!-- comments start using duoshuo -->
 			<div class="ds-share flat" data-thread-key={{ page.id }} data-title={{ page.title }} data-content={{ page.title }} data-url="{{ site.baseurl}}{{ page.url }}">
-    <div class="ds-share-inline">
-      <ul  class="ds-share-icons-16">
-      	
-      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-      	
-      </ul>
-      <div class="ds-share-icons-more">
-      </div>
-    </div>
- </div>
-            {% if page.comments %}
-			<!-- comments start -->
+				<div class="ds-share-inline">
+					<ul  class="ds-share-icons-16">
+						<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+						<li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+						<li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+						<li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+						<li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+						
+					</ul>
+				<div class="ds-share-icons-more"></div>
+				</div>
+			</div>
 			<div class="ds-thread" data-thread-key={{ page.id }} data-title={{ page.title }} data-url="{{ site.baseurl}}{{ page.url }}"></div>
 			<!-- comments end -->
-
+			{% endif %}
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"zhuliangjun"};
 	(function() {
@@ -44,19 +42,17 @@ var duoshuoQuery = {short_name:"zhuliangjun"};
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
 </script>
-            {% endif %}
-            </div>
-          </div>
-          <div class="pagination">
-              {% if page.next %}
-                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">Newer Post</a>
-              {% endif %}
-              {% if page.previous %}
-                <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Older Post</a>
-              {% endif %}
-</div>
-
-        </div>
-    </div>
+            
+			</div>
+		</div>
+		<div class="pagination">
+			{% if page.next %}
+			<a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">Newer Post</a>
+			{% endif %}
+			{% if page.previous %}
+			<a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Older Post</a>
+			{% endif %}
+		</div>
+	</div>
 </div>
 {% include footer.html %}
