@@ -1,10 +1,8 @@
 # Jekyll configuration
 
-name: Liang-Jun Zhu's Blog
+name: Liang-Jun Zhu | 飞天小猪
 description: GIS, Watershed modeling, Digital terrain analysis...
 
-# url is currently only used only for the RSS feed in feed.xml
-url: https://crazyzlj.github.io/
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.
