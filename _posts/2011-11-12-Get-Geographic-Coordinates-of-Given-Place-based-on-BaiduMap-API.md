@@ -25,6 +25,7 @@ Implementation
 
 完整代码如下，[下载](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/baidu-API-search-locations/SearchForLocationCoordinateFromBaiduAPI.html)：
 
+
 <figure class="lineno-container">
 {% highlight js linenos %}
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
