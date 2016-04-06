@@ -61,25 +61,13 @@ Put setuptools, pip, and other *.whl under the same folder, the batch process co
 
 **5. Common errors**
 ====
-- Error of **pywin32**
++ Error of **pywin32**
 		
 Description:
 
 ```python
 >>> import win32com.client
 Traceback (most recent call last):
-  File "<input>", line 1, in <module>
-  File "C:\Program Files (x86)\JetBrains\PyCharm Community Edition 5.0.3\helpers\pydev\pydev_import_hook.py", line 21, in do_import
-    module = self._system_import(name, *args, **kwargs)
-  File "C:\Python27x64\lib\site-packages\win32com\__init__.py", line 5, in <module>
-    import win32api, sys, os
-  File "C:\Program Files (x86)\JetBrains\PyCharm Community Edition 5.0.3\helpers\pydev\pydev_import_hook.py", line 21, in do_import
-    module = self._system_import(name, *args, **kwargs)
-ImportError: DLL load failed: The specified module could not be found.
->>> import win32api
-Traceback (most recent call last):
-  File "<input>", line 1, in <module>
-  File "C:\Program Files (x86)\JetBrains\PyCharm Community Edition 5.0.3\helpers\pydev\pydev_import_hook.py", line 21, in do_import
     module = self._system_import(name, *args, **kwargs)
 ImportError: DLL load failed: The specified module could not be found.
 ```
@@ -92,7 +80,9 @@ Copy
 C:\Python26\Lib\site-packages\pywin32_system32\*
 to
 C:\Windows\System32
-Then, try this again in Python
+Then, try to import win32api or win32com.client in Python, it will be OK!
 >>> import win32api
 >>> import win32com.client
 ```
+
++ TO BE CONTINUE
