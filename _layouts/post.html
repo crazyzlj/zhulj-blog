@@ -1,3 +1,4 @@
+
 {% include header.html %}
 
 <div class="container container-left">
@@ -54,6 +55,30 @@ var duoshuoQuery = {short_name:"zhuliangjun"};
             
 			</div>
 		</div>
+		<!-- add back to up button -->
+		<div id="back-top">
+		  <a href="#top" title="back-to-top">
+			<i class="fa fa-arrow-up fa-2x"></i>
+		  </a>
+		</div>
+		<script type="text/javascript">
+		$("#back-top").hide();
+		$(document).ready(function () {
+		  $(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+			  $('#back-top').fadeIn();
+			} else {
+			  $('#back-top').fadeOut();
+			}
+		  });
+		  $('#back-top a').click(function () {
+			$('body,html').animate({
+			  scrollTop: 0
+			}, 500);
+			return false;
+		  });
+		});
+		</script>
 		<div class="pagination">
 			{% if page.next %}
 			<a class="btn btn-default" href="{{ site.baseurl}}{{ page.next.url }}" class="next">Newer Post</a>
