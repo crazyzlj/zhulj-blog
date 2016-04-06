@@ -33,8 +33,9 @@ gaaccount: 'UA-75301149-1'
 disqus: 'liangjunzhusblog'
 comments: true
 #permalink: /:year/:month/:title
-paginate: 4
+paginate: 6
 paginate_path: "page:num"
+excerpt_separator: "<!-- more -->"
 #highlighter: rouge
 #markdown: redcarpet
 #redcarpet:

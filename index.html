@@ -7,7 +7,17 @@ layout: default
     <div class="well">
         <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
         <div class="content">
-            {{ post.content }}
+            {{ post.excerpt }}
+			{% capture content_words %} 
+			{{ post.content | number_of_words }} 
+			{% endcapture %} 
+			{% capture excerpt_words %} 
+			{{ post.excerpt | number_of_words }} 
+			{% endcapture %} 
+			{% if excerpt_words != content_words %}
+				<p><a class="btn btn-sm btn-primary" href="{{ post.url }}/#read-more" role="button">Read more <i class="fa fa-arrow-circle-right"></i></a>
+				</p>
+			{% endif %}
         </div>
     </div>
 </div>

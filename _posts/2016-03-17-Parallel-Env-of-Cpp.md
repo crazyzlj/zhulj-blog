@@ -15,3 +15,5 @@ comments: true
 方法一：链接: http://pan.baidu.com/s/1c0saqQW 密码: ggbj
 方法二：http://download.gisinternals.com/sdk/downloads/release-1600-x64-gdal-1-11-1-mapserver-6-4-1/gdal-111-1600-x64-core.msi
 一路下一步就可以，安装路径在`C:\Program Files\GDAL`下，在环境变量里新建`GDAL_DATA`项，路径设置为`C:\Program Files\GDAL\gdal-data`
+
+<!-- more -->

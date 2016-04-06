@@ -14,6 +14,8 @@ Requirement and Design
 1. 调用`百度地图JS版API`，查询地点并将得到的经纬度坐标保存成`CSV文件`；
 2. 利用`Python`调用`Arcpy`将CSV文件中的经纬度转换成`ESRI Shapefile`。
 
+<!-- more -->
+
 Implementation
 =====
 

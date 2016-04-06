@@ -12,6 +12,9 @@ comments: true
 	+ **[Clover](http://ejie.me/download/)**：非常好用的Windows资源管理器的扩展，增加了类似网页浏览器的Tab管理和收藏夹功能
 	+ **[Everything](http://www.voidtools.com/Everything-1.3.4.686.x64-Setup.exe)**：秒速查询电脑文件，反正比Windows管理器快NNNNN倍
 	+ **[Daemon](http://na-us7.disc-tools.com/request?p=d3dd751a0425035b0e821547866b73e3/DTLiteInstaller.exe)**：最好用的虚拟光驱软件 
+
+<!-- more -->
+
 2. **网络应用**
 	+ **[TeamViewer](http://download.teamviewer.com/download/TeamViewer_Setup_zhcn.exe)**： 远程协助计算机，**同一账号下**无需另一台电脑确认操作，非常方便
 	+ **[Fiddler](https://www.telerik.com/download/fiddler)**： 免费且强大的数据包抓取软件，特别是**分析网页数据以抓取有用信息**时候使用

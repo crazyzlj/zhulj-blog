@@ -23,6 +23,8 @@ References:
 Step by step:
 ======
 
+<!-- more -->
+
 1. **Install Jekyll on Windows**
 	+ 1.1 Install Chocolatey
 		+ Open a command prompt with Administrator access

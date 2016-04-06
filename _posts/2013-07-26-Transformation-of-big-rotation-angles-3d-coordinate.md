@@ -39,6 +39,8 @@ $$\left[ \begin{array}{l}
 {Z_S}
 \end{array} \right]   (1)$$
 
+<!-- more -->
+
 (1)式中\\(\left[ \begin{array}{l}
 {X_T}&{Y_T}&{Z_T}
 \end{array} \right]^T\\)为目标坐标系下的坐标,\\(\left[ \begin{array}{l}

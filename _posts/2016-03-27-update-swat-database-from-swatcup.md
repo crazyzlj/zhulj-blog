@@ -21,15 +21,19 @@ So, when the calibration is done by SWAT-CUP, users have a desire to write the c
 
 Usually, we have two methods to accomplish this requirement.
 
+<!-- more -->
+
 ## **1.1 Manual calibration in SWATEditor**
 
 After the basis SWAT model is built, users may manual calibrate their model by modifying parameters using Manual Calibration Helper in SWATEditor (such as Fig.1 and Fig.2).
 
 ![Fig.1-manual-calibration-helper](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/swatcup-2-swat-database%2F1-manual-calibration-helper.jpg)
-Fig.1 Manual calibration Helper in SWATEditor
+
+**Fig.1 Manual calibration Helper in SWATEditor**
 
 ![Fig.2-manual-calibration-helper2](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/swatcup-2-swat-database%2F2-manual-calibration-helper2.jpg)
-Fig.2 Parameter selection and modification GUI in SWATEditor
+
+**Fig.2 Parameter selection and modification GUI in SWATEditor**
 
 Besides the easy to learn and convenient, however, there are some drawbacks of this method:
 
@@ -49,10 +53,10 @@ The usual steps is as follows:
 + Type the SQL sentences and press run to update the table (see Fig.4).
 
 <img src="http://zhulj-blog.oss-cn-beijing.aliyuncs.com/swatcup-2-swat-database%2F3-manual-update-access-database.jpg" width="800">
-Fig.3 Build a new query layout in Access
+**Fig.3 Build a new query layout in Access**
 
 <img src="http://zhulj-blog.oss-cn-beijing.aliyuncs.com/swatcup-2-swat-database%2F4-type-sql-sentences-and-run.jpg" width="800">
-Fig.4 Tyep SQL sentences and run update
+**Fig.4 Tyep SQL sentences and run update**
 
 Obviously, some advantage can be highlighted, such as:
 
@@ -164,7 +168,8 @@ r__AI1.wwq	0.06
 + put `Update_SWAT_mdb_from_SWAT_CUP.py`,  `Absolute_SWAT_Values.txt`, and `model.in` into the folder of SWAT, i.e., the same folder with  `<project name>.mdb` (such as Fig. 5)
 
 ![files-list](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/swatcup-2-swat-database%2F5-files-list.jpg)
-Fig.5 Files list
+
+**Fig.5 Files list**
 
 + open `Update_SWAT_mdb_from_SWAT_CUP.py` and assign your project name to `SWAT_PROJ_NAME` in line 277, such as
  
@@ -174,7 +179,8 @@ SWAT_PROJ_NAME = 'zts2'
 
 + Run the python script. Fig.6 is the example output of one updated parameters. There are three SQLs to finish the update, one for relative or replace change, and the other two for absolutely range examination.
 ![Fig.6-output](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/swatcup-2-swat-database%2F6-execution-windows.jpg)
-Fig.6 Example output of one updated parameter
+
+**Fig.6 Example output of one updated parameter**
 
 # 3 Conclusion
 

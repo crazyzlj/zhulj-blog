@@ -13,6 +13,9 @@ comments: true
 ArcGIS Desktop 10.3开始安装时必须选择安装Python，好在可通过ArcGIS_BackgroundGP_for_Desktop_103_141996.exe安装支持64位python的arcpy。
 这样，装完ArcGIS10.3之后我们就有了32位和64位的Python 2.7.8，分别位于`C:\Python27\ArcGIS10.3`和`C:\Python27\ArcGISx6410.3`。
 我们以使用64位Python为例进行配置，将`C:\Python27\ArcGISx6410.3;C:\Python27\ArcGISx6410.3\Scripts`添加至环境变量Path中;
+
+<!-- more -->
+
 但是此时如果右键以IDLE打开某py脚本，默认的python是32位版本的，需要做如下设置：
 
 	注册表中找到
