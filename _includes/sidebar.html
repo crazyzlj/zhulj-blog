@@ -19,9 +19,11 @@
 </div>
 <div class="sidebar well">
     <h1>Tags</h1>
-{% for tag in site.tags %}
-<a href="/tags/#{{tag | first}}">{{ tag | first }}(<b>{{ tag | last | size }}</b>)</a>
-{% endfor %}
+	{% for tag in site.tags %}
+        <a href="/tags/#{{ tag | first }}" style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70}}%">
+            {{ tag | first }}
+        </a>
+	{% endfor %}
 </div>
 <div class="sidebar well">
     <h1>Recent Blogs</h1>
@@ -35,4 +37,4 @@
 <div class="sidebar well">
 {% include links-list.html %}
 </div>
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=RRJE&d=9FL7tKI5oBPD5HtcCpb7ryF0D9eCpoEbQVLQx6tGYzM"></script>
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=RRJE&d=L1Y2sFwqcivBgltjD36ZuoE9dYHe_ac4K7_S1dhqu2U"></script>
