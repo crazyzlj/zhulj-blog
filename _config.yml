@@ -32,27 +32,14 @@ gaaccount: 'UA-75301149-1'
 # disable on a post-by-post basis
 disqus: 'liangjunzhusblog'
 comments: true
-#permalink: /:year/:month/:title
 paginate: 6
 paginate_path: "page:num"
 excerpt_separator: "<!-- more -->"
-#highlighter: rouge
-#markdown: redcarpet
-#redcarpet:
-#  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
 syntax_highligher: rouge
 markdown: kramdown
 kramdown:
     input: GFM
     syntax_highlighter: rouge
-    # hard_wrap: false
-    # extensions:
-      # - autolink
-      # - footnotes
-      # - smart
-    # enable_coderay: true
-    # coderay:
-       # coderay_line_numbers: nil
+
 gems: ['jekyll-paginate','rouge']
 timezone: Asia/Shanghai
-#exclude: ['README.md', 'LICENSE']

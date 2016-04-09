@@ -90,7 +90,6 @@ body {
   -webkit-transition: 0.7s;
   -moz-transition: 0.7s;
   transition: 0.7s;
-  behavior: url({{ ASSET_DIR }}/css/PIE.htc);
 }
 #back-top:hover {
   background-color: #777;
@@ -100,4 +99,18 @@ body {
   text-decoration: none;
   padding: 12px 14px;
   display: inline-block;
+}
+
+/*  CV style  */
+#webaddress {
+ 	margin-top: 0em;
+	position: relative;
+	left: 28%;
+	color: #ccc;
+	font-family: Menlo,monospace,sans-serif;
+	font-size: 90%;
+}
+
+#webaddress a {
+	text-decoration: none;
 }
