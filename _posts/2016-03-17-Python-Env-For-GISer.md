@@ -63,22 +63,24 @@ python get-pip.py
 
 ```posh
 @echo off
+@echo off
 echo "Liangjun Zhu, zlj@lreis.ac.cn"
 echo "-- Install Python Packages Using Pip..."
 echo "-- WHL files downloaded from http://www.lfd.uci.edu/~gohlke/pythonlibs/"
+pushd %~dp0
 cd %~dp0
 :: python path, x86 or x64 versioned python
-set PYPATH = C:/python27x64/
-set PIPPYTH = %PYPATH%Script/
+set PYPATH=C:/python27x86/
+set PIPPYTH=%PYPATH%Scripts/
 :: COMMENT-1: Install easy_install and pip without network
 ::%PYPATH%python %~dp0\setuptools-18.2\setup.py install
 ::%PYPATH%python %~dp0\pip-7.1.2\setup.py install
 :: COMMENT-2: Install easy_install and pip without network
-%PYPATH%python get-pip.py
+::%PYPATH%python get-pip.py
 for /f "delims=" %%i in ('dir /s/b "*.whl"') do ( 
 echo installing %%~ni ...
 %PIPPYTH%pip install %%i 
-) 
+)
 echo "-- All packages installed Succeed!"
 pause
 ```
@@ -93,28 +95,5 @@ pause
 
 **5. Common errors**
 ====
-+ Error of **pywin32**
-		
-Description:
-
-```python
->>> import win32com.client
-Traceback (most recent call last):
-    module = self._system_import(name, *args, **kwargs)
-ImportError: DLL load failed: The specified module could not be found.
-```
-
-Solution:
-
-```python
-
-Copy
-C:\Python26\Lib\site-packages\pywin32_system32\*
-to
-C:\Windows\System32
-Then, try to import win32api or win32com.client in Python, it will be OK!
->>> import win32api
->>> import win32com.client
-```
 
 + TO BE CONTINUE
