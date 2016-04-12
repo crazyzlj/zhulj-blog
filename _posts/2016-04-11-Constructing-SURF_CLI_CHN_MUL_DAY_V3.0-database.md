@@ -21,6 +21,7 @@ comments: true
 <!-- more -->
 
 <img src="http://zhulj-blog.oss-cn-beijing.aliyuncs.com/climate%2Fchina-meteo-sites.jpg" width="600">
+
 **图1. 中国839个基准、基本气象站分布图**
 
 但是，网站更新之后，数据只能按照时间检索，如图2所示，对只想下载某几个站点非常不便。
@@ -251,7 +252,9 @@ def writeClimateDataToDatabase(allClimData, dbpath):
 ## 2.3.2 查询函数设计
 
 输出为：
+
 + 1.站点经纬度、高程信息文件：`stationInfo.csv`
+
 + 2.按站点名命名的气象数据文件：e.g., `S50527.csv`
 
 ```python
