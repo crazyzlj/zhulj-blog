@@ -109,13 +109,19 @@ Value,Landuse
 
 与土地利用数据准备类似，土壤数据也需进行重编码和准备查找表。值得一提的是，SWAT内置了美国土壤数据库，并不符合中国土壤情况，因此，我们需要自建土壤数据库。
 
-+ 1.从`QSWATRef2012.mdb`中将`usersol`表导出为`usersol.xlsx`；
++ 1.从`QSWATRef2012.
++ 
++ 
++ 
++ `中将`usersol`表导出为`usersol.xlsx`；
 
 + 2.编辑`usersol.xlsx`：将研究区土壤类型（如`Heishatu`、`Xiaofenshatu`等）追加至表中；
 
 + 3.补充土壤类型对应的理化性质，参数可查地方土壤志，也可采样获得，不再赘述；
 
-+ 4.将编辑好的`usersol.xlsx`导入`QSWATRef2012.mdb`中，并覆盖原表，否则在`4.2 HRU划分`中会出现找不到土壤类型定义的错误（如图3）。
++ 4.将编辑好的`usersol.xlsx`导入`QSWATRef2012.mdb`中，并覆盖原表(如下图)，否则在`4.2 HRU划分`中会出现找不到土壤类型定义的错误（如图3）。
+
+![](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/QSWAT-manual%2F4.1-import-soil-database.jpg)
 
 ![fig3-soil-undefined](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/QSWAT-manual%2F4.0-soil-undefined.jpg)
 
