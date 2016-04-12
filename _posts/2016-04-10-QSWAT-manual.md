@@ -338,5 +338,6 @@ WGEN_LYQ.xlsx	气象站逐月数据（Excel中应包含WGEN_user数据表）
 接下来，通过简单几个手工调参，便可达到较好结果，随后，利用SWAT-CUP进行自动调参，得到更优参数。
 
 
-> 版权声明：本文为博主原创文章，未经博主允许不得转载。如需转载，请联系[zlj@lreis.ac.cn](zlj@lreis.ac.cn)，或在博文下留言，谢谢！。
+> 版权声明：本文为博主原创文章，未经博主允许不得转载。如需转载，请联系[zlj@lreis.ac.cn](zlj@lreis.ac.cn)，或在博文下留言，谢谢！
+>
 > All rights reserved: It's not allowed to use this post in any form include reproduce and modify without the origional author's permission. If any need, please contact [zlj@lreis.ac.cn](zlj@lreis.ac.cn). Thank you!
