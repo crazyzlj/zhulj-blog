@@ -8,7 +8,7 @@ comments: true
 ---
 
 # 1. Microsoft Visual Studio 2010 with Microsoft HPC 2012 MS-MPI
-安装`vcredist_x64_2010`和`vcredist_x86_2010`（机器装了`VS2010`则无需安装这两项）、`mpi_x64`，如果是32位机器则装`mpi_x86`，在命令行输入 `mpiexec` 测试是否安装成功
+（[Download](https://www.microsoft.com/en-us/download/details.aspx?id=36045)）安装`vcredist_x64_2010`和`vcredist_x86_2010`（机器装了`VS2010`则无需安装这两项）、`mpi_x64`，如果是32位机器则装`mpi_x86`，在命令行输入 `mpiexec` 测试是否安装成功
 
 # 2. GDAL
 下载并安装`gdal-111-1600-x64-core.msi`

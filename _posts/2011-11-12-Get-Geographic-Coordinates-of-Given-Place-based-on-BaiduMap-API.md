@@ -25,7 +25,7 @@ Implementation
 
 图1 基于百度地图模糊查询地名并返回经纬度坐标
 
-完整代码如下，[下载](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/baidu-API-search-locations/SearchForLocationCoordinateFromBaiduAPI.html)：
+<i class="fa fa-download fa-2x" aria-hidden="true"></i>完整代码如下，[下载](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/baidu-API-search-locations/SearchForLocationCoordinateFromBaiduAPI.html)：
 
 
 <figure class="lineno-container">
@@ -84,7 +84,7 @@ Implementation
 
 如果没有安装`ArcGIS`，即`Arcpy`不可用，可以选择调用`GDAL`，在此不再赘述。
 
-[运行示例点坐标下载](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/baidu-API-search-locations/designed_samples.csv)，[Python脚本下载](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/baidu-API-search-locations/CSV2PtsShp.py)
+<i class="fa fa-download fa-2x" aria-hidden="true"></i> [运行示例点坐标下载](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/baidu-API-search-locations/designed_samples.csv)，[Python脚本下载](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/baidu-API-search-locations/CSV2PtsShp.py)
 
 <figure class="lineno-container">
 {% highlight py linenos %}
@@ -131,3 +131,7 @@ if __name__ == '__main__':
     CSV2PtsShp(CSVFile,XName,YName)
 {% endhighlight %}
 </figure>   
+
+
+> 版权声明：本文为博主原创文章，未经博主允许不得转载。如需转载，请联系[zlj@lreis.ac.cn](zlj@lreis.ac.cn)，或在博文下留言，谢谢！。
+> All rights reserved: It's not allowed to use this post in any form include reproduce and modify without the origional author's permission. If any need, please contact [zlj@lreis.ac.cn](zlj@lreis.ac.cn). Thank you!
