@@ -15,6 +15,7 @@ comments: true
 + 1.[Creating Project Pages manually by Github](https://help.github.com/articles/creating-project-pages-manually/)
 + 2.[Automatic Documentation Publishing with GitHub and TravisCI](http://blog.gockelhut.com/2014/09/automatic-documentation-publishing-with.html "Automatic Documentation Publishing with GitHub and TravisCI")
 
+<!-- more -->
 
 # 1 手工创建Github Pages
 
@@ -34,7 +35,7 @@ git commit -a -m "First pages commit"
 git push origin gh-pages
 ```
 
-这样，就可以通过http(s)://<username>.github.io/<projectname>访问项目主页了，比如[http://seims.github.io/SEIMS/](http://seims.github.io/SEIMS/)，注意，repository大小写敏感！
+这样，就可以通过`http(s)://<username>.github.io/<projectname>`访问项目主页了，比如[http://seims.github.io/SEIMS/](http://seims.github.io/SEIMS/)，注意，repository大小写敏感！
 
 # 2 为Travis CI创建SSH key
 
@@ -48,6 +49,8 @@ ssh-keygen -t rsa -C "youremail@example.com" -f config/travisci_rsa
 此时，可将私有密钥`travisci_rsa`上传至Github但是，这样会带来一点安全隐患，而我们希望我们的私有密钥`travisci_rsa`放到Travis CI上而不被其他人看到。很显然，我们不能直接将其上传至公开仓库。
 
 幸好，Travis CI提供了加密文件的方案，即Travis CI CLI，可从Ruby Gem安装，Windows下请首先安装[Ruby](http://rubyinstaller.org/downloads)，替换掉官方的sources，参考[这篇博客](http://zhulj.net/others/2016/03/17/Github-jekyll-blog.html)。
+
++ windows下操作（P.S.在我电脑上反正是出错！）：
 
 ```
 gem sources --add http://gems.ruby-china.org/ --remove https://rubygems.org/
@@ -73,6 +76,26 @@ mv travisci_rsa.enc config
 # 将以下两行添加至.travis.yml
 - chmod 0600 config/travisci_rsa
 - cp config/travisci_rsa ~/.ssh/id_rsa
+```
+
++ CentOS下操作：
+
+```
+# 安装ruby和gem以安装travis
+sudo yum install ruby rubygems
+# 但是这样安装之后，设置好中国的ruby源，安装travis依然遇到各种问题，比如SSL，hostname等。
+# ERROR:  While executing gem ...
+# (Gem::RemoteFetcher::FetchError)
+#    hostname was not match with the server certificate (https://gems-10023966.file.myqcloud.com/quick/Marshal.4.8/travis-1.8.2.gemspec.rz)
+
+# 因此推荐采用如下Linux服务器RVM安装脚本
+# https://github.com/huacnlee/init.d/blob/master/install_rvm
+vim install_rvm
+# 粘贴脚本内容
+chomd 700 install_rvm
+# 执行脚本
+./install_rvm 
+
 ```
 
 # 3 发布文档
