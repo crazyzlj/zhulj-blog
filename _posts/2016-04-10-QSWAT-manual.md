@@ -123,6 +123,10 @@ Value,Landuse
 
 ![](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/QSWAT-manual%2F4.1-import-soil-database.jpg)
 
+具体操作步骤为，一定注意，**不要主键！**<i class="fa fa-exclamation-triangle fa-2x"></i>
+
+> Access -> 外部数据 -> Excel -> 将数据导入当前数据库的新表中 -> 连着3个下一步 -> 不要主键 -> usersol -> 确定
+
 ![fig3-soil-undefined](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/QSWAT-manual%2F4.0-soil-undefined.jpg)
 
 **图3. 土壤类型未定义错误提示**
