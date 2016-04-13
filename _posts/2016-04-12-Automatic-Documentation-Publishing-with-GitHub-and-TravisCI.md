@@ -34,7 +34,7 @@ git commit -a -m "First pages commit"
 git push origin gh-pages
 ```
 
-这样，就可以通过`http(s)://<username>.github.io/<projectname>`访问项目主页了，比如[http://seims.github.io/SEIMS/](http://seims.github.io/SEIMS/)，注意，repository大小写敏感！
+这样，就可以通过http(s)://<username>.github.io/<projectname>访问项目主页了，比如[http://seims.github.io/SEIMS/](http://seims.github.io/SEIMS/)，注意，repository大小写敏感！
 
 # 2 为Travis CI创建SSH key
 
