@@ -298,9 +298,13 @@ def QueryDatabase(dbpath, savePath, stationIDs, startTime, endTime):
 
 # 3 总结
 
-+ 就是为了简单实现这么个功能，代码没进行优化设计，接近8G的数据读取并存入一个数据字典中，非常耗时。
++ 就是为了简单实现这么个功能，代码没进行优化设计，接近8G的数据读取并存入一个数据字典中，非常耗时（共32.3小时完成）。
 
-+ 最终得到的SQLite数据库文件大小为4 GB。
++ 最终得到的SQLite数据库文件大小为**1.23** GB，SQLite打开如图4。
+
+<img src="http://zhulj-blog.oss-cn-beijing.aliyuncs.com/climate%2Fsqlite-jietu.jpg" width="600">
+
+**图4. SURF_CLI_CHN_MUL_DAY_V3.0数据库截图**
 
 + 如有需要帮忙查询数据，请在本博客下面留言。
 
