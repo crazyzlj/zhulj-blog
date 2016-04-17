@@ -296,7 +296,20 @@ def QueryDatabase(dbpath, savePath, stationIDs, startTime, endTime):
     conn.close()
 ```
 
-# 3 总结
+# 3 站点经纬度及高程信息（2016-4-17 更新）
+
+<i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i> 当完成数据库构建之后，我查询了几个站点，发现经纬度和高程信息与之前看到的有细微差异！
+
+检查后发现，我的代码是以站点编号进行索引的，而默认了其经纬度、高程信息是正确且无误的。
+
+显然，事实并非如此，我又重新跑了一遍数据，找到并总结了每个站点的不同信息（经纬度和高程），比如下图这样，不知道气象共享网的数据库是怎么设计的，**难道没有检查过站点的经纬度和高程信息吗**？
+
+![stations_lat_lon_alti](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/climate%2Fstations_latlonalti.jpg)
+
+<i class="fa fa-download fa-2x" aria-hidden="true"></i>Excel表格可以点击[这里](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/climate%2Fstations_all-%E6%89%80%E6%9C%89%E7%AB%99%E7%82%B9%E7%9A%84%E6%89%80%E6%9C%89%E4%B8%8D%E5%90%8C%E7%9A%84%E7%BB%8F%E7%BA%AC%E5%BA%A6%E9%AB%98%E7%A8%8B.csv "all_stations_latlonalti")下载。
+
+
+# 4 总结
 
 + 就是为了简单实现这么个功能，代码没进行优化设计，接近8G的数据读取并存入一个数据字典中，非常耗时（共32.3小时完成）。
 

@@ -22,7 +22,7 @@ ArcGIS Desktop 10.3开始安装时必须选择安装Python，好在可通过ArcG
 
 	注册表中找到
 	HKEY_CLASSES_ROOT\\Python.CompiledFile\\shell\\open\\command\\(default)
-	将其value修改为"C:\Python27\ArcGISx6410.3\python.exe" "%1" %*
+	将其value修改为"C:\Python27x64\python.exe" "%1" %*
 
 以及其他注册表项，如下图：
 
