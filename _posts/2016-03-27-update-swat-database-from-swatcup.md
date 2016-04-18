@@ -130,7 +130,7 @@ Corresponding to the essential tips in section 1.3, I designed four function:
 
 ## **2.3 Download and Execution**
 
-<i class="fa fa-download fa-2x" aria-hidden="true"></i>The script can be forked and downloaded at [Github-crazyzlj-python](https://github.com/crazyzlj/Python/blob/master/SWAT_post_process/Update_SWAT_mdb_from_SWAT_CUP.py).
+<i class="fa fa-code-fork fa-2x" aria-hidden="true"></i>The script can be forked and downloaded at [Github-crazyzlj-python](https://github.com/crazyzlj/Python/blob/master/SWAT_post_process/Update_SWAT_mdb_from_SWAT_CUP.py).
 
 To run the script, you should have:
 

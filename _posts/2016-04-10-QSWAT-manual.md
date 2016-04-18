@@ -146,7 +146,7 @@ Value,Name
 
 下面主要介绍如何计算`PND_FR`。
 
-<i class="fa fa-download fa-2x" aria-hidden="true"></i>所用python脚本托管在[Github](https://github.com/crazyzlj/Python/blob/master/Util/pond_preprocess.py "python-pond_preprocess-by-ZhuLJ")上。
+<i class="fa fa-code-fork fa-2x" aria-hidden="true"></i>所用python脚本托管在[Github](https://github.com/crazyzlj/Python/blob/master/Util/pond_preprocess.py "python-pond_preprocess-by-ZhuLJ")上。
 
 > PND_FR: Fraction of subbasin area that drains into ponds. 
 
