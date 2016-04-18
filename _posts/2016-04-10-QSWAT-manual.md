@@ -30,16 +30,14 @@ comments: true
 
 P.S.1 写这篇博客时，我也是第一次真正构建、运行、率定SWAT模型，遇到了很多问题，感谢[Google SWAT](https://groups.google.com/forum/#!forum/swatuser "swat-user-group")/[SWAT-CUP Group](https://groups.google.com/forum/#!forum/swat-cup "swat-cup-google-group")以及其他网上博客的帮助。
 
-P.S.2 官方使用手册永远是最好的资料，在进行QSWAT学习过程中，详细翻阅了多个手册，包括：ArcSWAT2012 User Guide **[1]**, SWAT 2012 Input/Output Documentation **[2]**, SWAT Theory 2009 **[3]**, SWAT Editor 2012 **[4]**, QSWAT manual **[5]**, SWAT-CUP manual **[6]**等。
+P.S.2 官方使用手册永远是最好的资料，在进行QSWAT学习过程中，详细翻阅了多个手册，包括：ArcSWAT2012 User Guide[^ref1], SWAT 2012 Input/Output Documentation[^ref2], SWAT Theory 2009[^ref3], SWAT Editor 2012[^ref4], QSWAT manual[^ref5], SWAT-CUP manual[^ref6]等。
 
-```
-[1] Winchell, M., Srinivasan, R., Diluzio, J., Arnold, J.G., 2013. ArcSWAT Interface for SWAT 2012, User's Guide.
-[2] Arnold, J.G., Kiniry, J.R., Srinivasan, R., Williams, J.R., Haney, E.B., Neitsch, S.L., 2013. SWAT 2012 Input/Output Documentation. Texas Water Resources Institute.
-[3] Neitsch, S.L., Arnold, J.G., Kiniry, J.R., Williams, J.R., 2011. Soil and Water Assessment Tool Theoretical Documentation, Version 2009. Texas A&M University System, College Station, Texas, USA.
-[4] Winchell, M.,Srinivasan, 2012. SWAT Editor for SWAT 2012 Documentation. Texas Water Resources Institute.
-[5] Dile, Y.H., Srinivasan, R., George C., 2016. QGIS Interface for SWAT (QSWAT).
-[6] Abbaspour, K.C., 2015. SWAT-CUP: SWAT calibration and uncertainty programs - A User Manual. Eawag.
-```
+[^ref1]: Winchell, M., Srinivasan, R., Diluzio, J., Arnold, J.G., 2013. ArcSWAT Interface for SWAT 2012, User's Guide.
+[^ref2]: Arnold, J.G., Kiniry, J.R., Srinivasan, R., Williams, J.R., Haney, E.B., Neitsch, S.L., 2013. SWAT 2012 Input/Output Documentation. Texas Water Resources Institute.
+[^ref3]: Neitsch, S.L., Arnold, J.G., Kiniry, J.R., Williams, J.R., 2011. Soil and Water Assessment Tool Theoretical Documentation, Version 2009. Texas A&M University System, College Station, Texas, USA.
+[^ref4]: Winchell, M.,Srinivasan, 2012. SWAT Editor for SWAT 2012 Documentation. Texas Water Resources Institute.
+[^ref5]: Dile, Y.H., Srinivasan, R., George C., 2016. QGIS Interface for SWAT (QSWAT).
+[^ref6]: Abbaspour, K.C., 2015. SWAT-CUP: SWAT calibration and uncertainty programs - A User Manual. Eawag.
 
 # 2 QSWAT安装
 
@@ -352,3 +350,6 @@ WGEN_LYQ.xlsx	气象站逐月数据（Excel中应包含WGEN_user数据表）
 > 版权声明：本文为博主原创文章，未经博主允许不得转载。如需转载，请联系[zlj@lreis.ac.cn](zlj@lreis.ac.cn)，或在博文下留言，谢谢！
 >
 > All rights reserved: It's not allowed to use this post in any form include reproduce and modify without the origional author's permission. If any need, please contact [zlj@lreis.ac.cn](zlj@lreis.ac.cn). Thank you!
+
+
+# Reference
