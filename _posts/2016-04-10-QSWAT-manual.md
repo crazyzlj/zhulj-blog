@@ -2,7 +2,7 @@
 layout: post
 title: "Building SWAT model of a humid watershed in China using QSWAT"
 category: [SWAT]
-tag: [SWAT, manual]
+tag: [SWAT, 教程]
 date: 2016-04-11 20:00:00
 comments: true
 ---
@@ -10,24 +10,25 @@ comments: true
 * TOC
 {:toc}
 
-# 利用QSWAT进行SWAT建模————以中国南方湿润区小流域为例
+# 利用QSWAT进行SWAT建模(QSWAT教程)
+
 --------------
 
 # 1 写在前面
 
-由于ArcGIS的广泛使用，ArcSWAT顺理成章成为SWAT建模者的首选，但相信很多人和我一样，使用ArcSWAT（尤其指适配ArcGIS 10.x版本的）时，经常遇到莫名其妙的COM组件错误（如图1），无从查错，只能一遍遍重来……重来……重来……
+由于ArcGIS的广泛使用，[ArcSWAT](http://swat.tamu.edu/software/arcswat/ "ArcSWAT")顺理成章成为SWAT建模者的首选，但相信很多人和我一样，使用ArcSWAT（尤其指适配ArcGIS 10.x版本的）时，经常遇到莫名其妙的COM组件错误（如图1），无从查错，只能一遍遍重来……重来……重来……
 
 ![Fig1ArcSWAT-common-error](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/QSWAT-manual%2F1-ArcSWAT-common-error.jpg)
 
 **图1. ArcSWAT常见错误提示，无从下手**
 
-随着开源GIS软件的蓬勃发展，GRASS、QGIS等优秀软件日臻完善，基于这些软件的第三方插件亦愈加丰富。QSWAT就是这样一款足以替代ArcGIS进行SWAT参数准备及模型构建的用户界面插件。
+随着开源GIS软件的蓬勃发展，GRASS、QGIS等优秀软件日臻完善，基于这些软件的第三方插件亦愈加丰富。[QSWAT](http://swat.tamu.edu/software/qswat/ "QSWAT")就是这样一款足以替代ArcGIS进行SWAT参数准备及模型构建的用户界面插件。
 
-本文将从数据准备到软件操作，再到模型运行介绍利用QSWAT进行SWAT建模的过程，希望能够起到SWAT零基础入门的效果。
+本文将从数据准备到软件操作，再到模型运行介绍利用[QSWAT](http://swat.tamu.edu/software/qswat/ "QSWAT")进行SWAT建模的过程，希望能够起到SWAT零基础入门的效果。
 
 <!-- more -->
 
-P.S.1 写这篇博客时，我也是第一次真正构建、运行、率定SWAT模型，遇到了很多问题，感谢Google SWAT/SWAT-CUP Group以及其他网上博客的帮助。
+P.S.1 写这篇博客时，我也是第一次真正构建、运行、率定SWAT模型，遇到了很多问题，感谢[Google SWAT](https://groups.google.com/forum/#!forum/swatuser "swat-user-group")/[SWAT-CUP Group](https://groups.google.com/forum/#!forum/swat-cup "swat-cup-google-group")以及其他网上博客的帮助。
 
 P.S.2 官方使用手册永远是最好的资料，在进行QSWAT学习过程中，详细翻阅了多个手册，包括：ArcSWAT2012 User Guide **[1]**, SWAT 2012 Input/Output Documentation **[2]**, SWAT Theory 2009 **[3]**, SWAT Editor 2012 **[4]**, QSWAT manual **[5]**, SWAT-CUP manual **[6]**等。
 
@@ -44,6 +45,8 @@ P.S.2 官方使用手册永远是最好的资料，在进行QSWAT学习过程中
 
 按照QSWAT官网的安装教程，按照如下顺序依次安装即可：
 
+<i class="fa fa-exclamation-triangle fa-2x"></i>目前QSWAT仅支持32位版本的QGIS-2.6.1，请不要安装最新版QGIS。
+
 ```
 1. QGIS-OSGeo4W-2.6.1-1-Setup-x86.exe
 2. SwatEditorInstall.msi
@@ -56,7 +59,7 @@ P.S.2 官方使用手册永远是最好的资料，在进行QSWAT学习过程中
 
 ## 2.1 MPI配置
 
-QSWAT中利用[TauDEM](http://hydrology.usu.edu/taudem/taudem5/)进行地形参数提取（填洼、流向、汇流、河网提取、流域划分等），TauDEM的运行需要MPI并行环境。
+QSWAT中利用[TauDEM](http://hydrology.usu.edu/taudem/taudem5/)进行地形参数提取（填洼、流向、汇流、河网提取、流域划分等），TauDEM的运行需要[MPI并行环境](http://zhulj.net/c++/2016/03/18/Parallel-Env-of-Cpp.html "Parallel-Env-of-Cpp")。
 
 推荐安装微软的MPI实现： [Microsoft HPC 2012 MS-MPI](https://www.microsoft.com/en-us/download/details.aspx?id=36045)，默认安装路径为`C:\Program Files\Microsoft HPC Pack 2012`。
 
@@ -341,7 +344,9 @@ WGEN_LYQ.xlsx	气象站逐月数据（Excel中应包含WGEN_user数据表）
 
 本文从中国南方湿润区小流域的实际情况出发，比通常步骤多加了坑塘数据的设置，使得完全默认参数下的径流模拟已趋于合理。
 
-接下来，通过简单几个手工调参，便可达到较好结果，随后，利用SWAT-CUP进行自动调参，得到更优参数。
+接下来，通过简单几个手工调参，便可达到较好结果，随后，利用[SWAT-CUP](http://swat.tamu.edu/software/swat-cup/ "SWAT-CUP")进行自动调参，得到更优参数。
+
+相信很多SWAT建模者和我一样，都希望将SWAT-CUP自动率定结果重新写回SWAT数据库（.mdb），以便在可视化界面SWAT Editor中进一步修改调整，但是SWAT或SWAT-CUP官方并没有提供相应的工具，我用Python初步实现了这个功能，希望感兴趣的进行试用并提出宝贵建议，请移步[这里](http://zhulj.net/swat/2016/03/27/update-swat-database-from-swatcup.html "update-swat-database-from-swatcup")。
 
 
 > 版权声明：本文为博主原创文章，未经博主允许不得转载。如需转载，请联系[zlj@lreis.ac.cn](zlj@lreis.ac.cn)，或在博文下留言，谢谢！
