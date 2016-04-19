@@ -23,42 +23,42 @@
 			<p>All rights reserved: It’s not allowed to use this post in any form include reproduce and modify without the original author’s permission. If any need, please contact <a href="zlj@lreis.ac.cn">zlj@lreis.ac.cn</a>. Thank you!</p>
 			</blockquote>
 			<!-- end -->
+			<!-- Donate links -->
+			<div class ="post-donate">
+				<div id="donate_board" class="donate_bar center">
+					<a id="btn_donate" class="btn_donate" href="javascript:;" title="Donate 打赏"></a>
+					<span class="donate_txt">
+					&uarr;<br>
+					Buy me a cup of coffee for more and higher quality posts! Thank you!
+					</span>
+					<br>
+				</div>
+				<div id="donate_guide" class="donate_bar center hidden">
+					<img src="http://zhulj-blog.oss-cn-beijing.aliyuncs.com/aboutMe%2Falipay.jpg" title="支付宝打赏" height="120px" width="120px">
+					<img src="http://zhulj-blog.oss-cn-beijing.aliyuncs.com/aboutMe%2Fwechat.jpg" title="微信打赏" height="120px" width="120px">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="hosted_button_id" value="975U6UGBFTKG2">
+					<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+					<img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1">
+					</form>
+				</div>
+				<script type="text/javascript">
+					document.getElementById('btn_donate').onclick = function(){
+					$('#donate_board').addClass('hidden');
+					$('#donate_guide').removeClass('hidden');
+					}
+				</script>
+			</div>
+			
+			<!-- end -->
 			{% if page.comments %}
 			<!-- comments start using disqus-->
 			<div id="disqus_thread">
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             </div>
-			<!-- comments start using duoshuo -->
-			<!--<div class="ds-share flat" data-thread-key={{ page.id }} data-title={{ page.title }} data-content={{ page.title }} data-url="{{ site.baseurl}}{{ page.url }}">
-				<div class="ds-share-inline">
-					<ul  class="ds-share-icons-16">
-						<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-						<li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-						<li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-						<li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-						<li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-						
-					</ul>
-				<div class="ds-share-icons-more"></div>
-				</div>
-			</div>
-			<div class="ds-thread" data-thread-key={{ page.id }} data-title={{ page.title }} data-url="{{ site.baseurl}}{{ page.url }}"></div>-->
-			<!-- comments end -->
 			{% endif %}
-<!-- duoshuo
-			<script type="text/javascript">
-var duoshuoQuery = {short_name:"zhuliangjun"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-</script> -->
-            
 			</div>
 		</div>
 		<!-- add back to up button -->
