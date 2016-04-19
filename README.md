@@ -1,10 +1,12 @@
 Welcome to Liang-Jun Zhu's blog!
 
+[![DOI](https://zenodo.org/badge/20578/crazyzlj/crazyzlj.github.io.svg)](https://zenodo.org/badge/latestdoi/20578/crazyzlj/crazyzlj.github.io)
+
 Please visit [zhulj.net ](https://zhulj.net) for more information!
 
 Building history:
 
-
++ 2016-4-19	 发布博客第一个Release版本，并通过[Zenodo](https://zenodo.org)注册DOI，网站模板可以随意fork并修改（尊重原作者版权基础上），但是posts内所有内容均不允许转载、修改，如有需求，请联系我！
 
 + 2016-4-7   添加中英文简历，参考[markdown-cv](https://github.com/blmoore/md-cv)
 
