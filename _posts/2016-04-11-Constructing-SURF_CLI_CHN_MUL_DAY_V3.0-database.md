@@ -320,7 +320,3 @@ def QueryDatabase(dbpath, savePath, stationIDs, startTime, endTime):
 **图4. SURF_CLI_CHN_MUL_DAY_V3.0数据库截图**
 
 + 如有需要帮忙查询数据，请在本博客下面留言。
-
-> 版权声明：本文为博主原创文章，未经博主允许不得转载。如需转载，请联系[zlj@lreis.ac.cn](zlj@lreis.ac.cn)，或在博文下留言，谢谢！
-> 
-> All rights reserved: It's not allowed to use this post in any form include reproduce and modify without the original author's permission. If any need, please contact [zlj@lreis.ac.cn](zlj@lreis.ac.cn). Thank you!
