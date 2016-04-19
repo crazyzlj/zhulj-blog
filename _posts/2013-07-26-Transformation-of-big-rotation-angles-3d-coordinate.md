@@ -5,7 +5,7 @@ comments: yes
 date: "2013-07-26 17:00:00"
 output: html_document
 layout: post
-tag:[Matlab]
+tag: [Matlab]
 category: [Research]
 ---
 
