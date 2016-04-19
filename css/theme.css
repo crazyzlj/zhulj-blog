@@ -105,5 +105,6 @@ body {
   padding: 12px 14px;
   display: inline-block;
 }
-
-
+.anchor-header-for-toc{
+	padding-top: 60px;
+}

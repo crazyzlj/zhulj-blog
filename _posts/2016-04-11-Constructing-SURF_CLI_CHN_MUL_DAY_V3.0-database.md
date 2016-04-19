@@ -62,6 +62,8 @@ def downloadByUrl(curUrl, filePath):
 
 ## 2.2 存入数据库
 
+包括气象站点数据结构及如何写入SQLite数据库代码设计。
+
 ### 2.2.1 气象站点数据结构
 
 + 原始记录中，每条记录均包含站点编号、经纬度、高程，造成数据冗余，因此设计一个站点父类`climateStation`，保存这些信息：
@@ -234,9 +236,11 @@ def writeClimateDataToDatabase(allClimData, dbpath):
     conn.close()
 ```
 
-# 2.3 读取数据库
+## 2.3 读取数据库
 
-## 2.3.1 输入查询条件
+读取数据库设计，包括查询条件输入格式及查询函数设计。
+
+### 2.3.1 输入查询条件
 
 查询条件包括站号（为空则查询所有站点），起始时间和终止时间：
 
@@ -249,7 +253,7 @@ def writeClimateDataToDatabase(allClimData, dbpath):
     SAVE_PATH = r'...\results'
 ```
 
-## 2.3.2 查询函数设计
+### 2.3.2 查询函数设计
 
 输出为：
 

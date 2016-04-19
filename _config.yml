@@ -38,6 +38,7 @@ excerpt_separator: "<!-- more -->"
 syntax_highligher: rouge
 markdown: kramdown
 kramdown:
+    auto_ids: true
     input: GFM
     syntax_highlighter: rouge
 
