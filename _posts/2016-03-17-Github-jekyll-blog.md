@@ -2,7 +2,7 @@
 layout: post
 title: "Using Github and jekyll to build your personal blog like this"
 category: [Others]
-tag: [Github, jekyll, 教程]
+tag: [Github, jekyll, Toturial]
 date: 2016-03-17 15:00:00
 comments: true
 ---

@@ -4,7 +4,11 @@ Welcome to Liang-Jun Zhu's blog!
 
 Please visit [zhulj.net ](https://zhulj.net) for more information!
 
-Building history:
+# Building history:
+-----------
++ 2016-4-22 add Donate button by [Paypal](https://developer.paypal.com/docs/classic/paypal-payments-standard/ht_pps-donateButton/) and [支付宝、微信](https://github.com/xirong/hexo-theme-next)
+
++ 2016-4-20 [为Jekyll博客添加目录与ScrollSpy效果](http://t.hengwei.me/post/%E4%B8%BAjekyll%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9B%AE%E5%BD%95%E4%B8%8Escrollspy%E6%95%88%E6%9E%9C/)，且一并解决了[锚链接缩进问题](http://t.hengwei.me/post/%E4%B8%BAjekyll%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9B%AE%E5%BD%95%E4%B8%8Escrollspy%E6%95%88%E6%9E%9C/#2-a-锚链接缩进问题)
 
 + 2016-4-19	 发布博客第一个Release版本，并通过[Zenodo](https://zenodo.org)注册DOI，网站模板可以随意fork并修改（尊重原作者版权基础上），但是posts内所有内容均不允许转载、修改，如有需求，请联系我！
 

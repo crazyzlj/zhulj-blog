@@ -2,7 +2,7 @@
 layout: post
 title: "Automatically write Calibrated parameters by SWAT-CUP (model.in) back to SWAT Access database (.mdb)"
 category: [SWAT]
-tag: [SWAT, Python, 教程]
+tag: [SWAT, Python, Toturial]
 date: 2016-03-27 15:00:00
 comments: true
 ---

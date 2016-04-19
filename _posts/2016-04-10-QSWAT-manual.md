@@ -2,7 +2,7 @@
 layout: post
 title: "Building SWAT model of a humid watershed in China using QSWAT"
 category: [SWAT]
-tag: [SWAT, 教程]
+tag: [SWAT, Toturial]
 date: 2016-04-11 20:00:00
 comments: true
 ---

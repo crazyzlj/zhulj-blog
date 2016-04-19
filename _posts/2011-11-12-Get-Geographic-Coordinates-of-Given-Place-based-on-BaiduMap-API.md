@@ -2,7 +2,7 @@
 layout: post
 title: "基于百度地图API获取指定城市地名坐标并生成ESRI Shapefile"
 category: [Efficiency]
-tag: [JavaScript, Python, Arcpy]
+tag: [JavaScript, Python, arcpy]
 date: 2011-11-12 17:00:00
 comments: true
 ---

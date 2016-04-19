@@ -2,7 +2,7 @@
 layout: post
 title: "Python Environment Configuration for GISer"
 category: [Python]
-tag: [Python, Arcpy, GIS]
+tag: [Python, arcpy, GIS]
 date: 2016-03-17 17:00:00
 comments: true
 ---

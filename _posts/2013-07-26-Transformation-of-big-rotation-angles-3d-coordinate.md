@@ -5,10 +5,8 @@ comments: yes
 date: "2013-07-26 17:00:00"
 output: html_document
 layout: post
-tag:
-- Matlab
-- Math
-category: Research
+tag:[Matlab]
+category: [Research]
 ---
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
