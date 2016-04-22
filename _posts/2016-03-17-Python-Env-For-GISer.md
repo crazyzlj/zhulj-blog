@@ -7,8 +7,9 @@ date: 2016-03-17 17:00:00
 comments: true
 ---
 
-**1. Arcpy**
-======
+{toc}
+
+## 1.Arcpy
 
 ArcGIS Desktop 10.3开始安装时必须选择安装Python，好在可通过ArcGIS_BackgroundGP_for_Desktop_103_141996.exe安装支持64位python的arcpy。
 这样，装完ArcGIS10.3之后我们就有了32位和64位的Python 2.7.8，分别位于`C:\Python27\ArcGIS10.3`和`C:\Python27\ArcGISx6410.3`。
@@ -28,9 +29,8 @@ ArcGIS Desktop 10.3开始安装时必须选择安装Python，好在可通过ArcG
 
 ![](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/python-related%2Fpython-configuration.png)
 
+## 2.Install easy_install and pip
 
-**2. Install easy_install and pip**
-======
 + 离线安装pip
 
 	管理员方式运行cmd，cd到setuptools所在目录，输入`python setup.py install`；
@@ -42,8 +42,7 @@ ArcGIS Desktop 10.3开始安装时必须选择安装Python，好在可通过ArcG
 python get-pip.py
 ```
 
-**3. Install packages using pip**
-======
+## 3.Install packages using pip
 
 + GDAL
 通过上述链接，可以下载完整的GDAL打包文件GDAL-1.11.3-cp27-none-win_amd64.whl，管理员方式运行cmd，cd到该文件目录，输入pip install GDAL-1.11.3-cp27-none-win_amd64.whl，提示安装成功即可，输入以下命令验证是否安装成功：
@@ -85,15 +84,62 @@ echo "-- All packages installed Succeed!"
 pause
 ```
 
-这样便会自动安装该文件夹下的packages...
+这样便会自动安装该文件夹所有的packages...
 
-**4. PyCharm**
-=====
-	
-非常好用的Python IDE
+## 4.并行计算
 
+如果能够利用Python进行并行计算，这将大大方便光大不会用或者不想用C/C++编程的同学们。[MPI4PY](http://pythonhosted.org/mpi4py/)这个库就实现了在Python中利用MPI进行并行编程！
 
-**5. Common errors**
-====
+官方的说明文档适用于Linux/Mac，并没有介绍Windows下的使用，下面简要介绍Windows下如何调用mpi4py实现Python并行编程。
 
-+ TO BE CONTINUE
+### 4.1安装mpi4py
+
+从[这里](http://www.lfd.uci.edu/~gohlke/pythonlibs/#mpi4py)下载适合自己版本的`mpi4py.whl`文件，然后：
+`pip install mpi4py.whl`
+完成安装。
+
+mpi4py的编译需要MPI并行环境的支持（目前，2.0.0版本需要[Microsoft MPI v6](https://www.microsoft.com/en-us/download/details.aspx?id=47259)），因此需要下载安装MPI库。
+
+### 4.2安装MPI运行环境
+
+Windows下，MPI的实现比较少，我们一般常用Microsoft的实现，随着版本迭代更新，已经从当年的[HPC 2008 R2 MS-MPI](https://www.microsoft.com/en-us/download/details.aspx?id=14737)发展到了[Microsoft MPI v6](https://www.microsoft.com/en-us/download/details.aspx?id=47259)、[V7](https://www.microsoft.com/en-us/download/details.aspx?id=49926)，在Windows下进行并行编程变得愈加方便。
+
+下载[Microsoft MPI v6](https://www.microsoft.com/en-us/download/details.aspx?id=47259)下的两个文件，分别安装：
+`msmpisdk.msi, MSMpiSetup.exe`
+
+### 4.3为mpi4py配置MPI环境
+
+找到并打开mpi4py安装目录下的`mpi.cfg`文件，修改MPI库和头文件路径，默认的路径如下(x64位)：
+
+```
+[mpi]
+include_dirs = C:\Program Files (x86)\Microsoft SDKs\MPI\Include
+libraries = msmpi
+library_dirs = C:\Program Files (x86)\Microsoft SDKs\MPI\lib\x64
+```
+
+### 4.4测试
+
+新建`mpi4py_test.py`，输入如下代码：
+
+```python
+from mpi4py import MPI
+from mpi4py import MPI
+import sys
+size = MPI.COMM_WORLD.Get_size()
+rank = MPI.COMM_WORLD.Get_rank()
+name = MPI.Get_processor_name()
+print("Hello MPI for Python! I am process %d of %d on %s.\n" % (rank, size, name))
+```
+
+命令行中输入如下命令：
+
+```
+mpiexec -n 4 python E:\test\mpi4py_test.py
+```
+
+即可看到如下图所示结果：
+
+![mpi4py_test_result](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/python%2Fmpi4py_test.jpg)
+
+Done！
