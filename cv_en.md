@@ -32,7 +32,7 @@ GIS, PhD candidate
 
 ### Peer-reviewed Papers:
 
-Ren Z-P, ***Zhu L-J***, Wang B, et al. [Soil hydraulic conductivity as affected by vegetation restoration age on the Loess Plateau](http://dx.doi.org/10.1007/s40333-016-0010-2). *Journal of Arid Land*, 2016, (Online, SCI).
+Ren Z-P, ***Zhu L-J***, Wang B, et al. [Soil hydraulic conductivity as affected by vegetation restoration age on the Loess Plateau](http://dx.doi.org/10.1007/s40333-016-0010-2). *Journal of Arid Land*, 2016, 8(4): 546-555.
 
 ### Papers in Chinese: 
 ***Zhu L-J***, Zhang G-H\*, Li Z-W, Geng R. [A Laser scanner system for rill morphology measurement based on Linear Structured Light](http://dx.doi.org/10.16089/j.cnki.1008-2786.000093). *Mountain Research*. 2015, 33(6): 770-776.
