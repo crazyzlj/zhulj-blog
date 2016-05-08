@@ -47,5 +47,4 @@ Hu G-F, Zhang G-H*, ***Zhu L-J***. [Comparison of three methods to measure depth
 
 ## Conferences
 
-
-### ***Updated: Apr. 2016***
+`Updated: Apr. 2016`
