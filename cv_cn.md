@@ -37,7 +37,7 @@ Ren Z-P\*, ***Zhu L-J***, Wang B, et al. [Soil hydraulic conductivity as affecte
 
 ***朱良君***, 张光辉\*, 李振炜, 耿韧. [一种基于线结构光技术的细沟形态测量系统](http://dx.doi.org/10.16089/j.cnki.1008-2786.000093). *山地学报*. 2015, 33(6): 770-776.
 
-胡国芳, 张光辉*, ***朱良君***. [3种坡面流水深测量方法比较](http://dx.doi.org/10.13961/j.cnki.stbctb.2015.03.034). *水土保持通报*. 2015, 35(3):152-156.
+胡国芳, 张光辉\*, ***朱良君***. [3种坡面流水深测量方法比较](http://dx.doi.org/10.13961/j.cnki.stbctb.2015.03.034). *水土保持通报*. 2015, 35(3):152-156.
 
 ***朱良君***, 张光辉\*. [地表微地形测量及定量化方法研究综述](http://www.cnki.net/KCMS/detail/detail.aspx?QueryID=1&CurRec=2&dbcode=CJFQ&dbname=CJFDHIS2&filename=STBC201305018&urlid=&yx=&uid=WEEvREcwSlJHSldSdnQ0THU0Y3lkU3ROZlh3T2ZxSytRVDREbTUzQTJUQXNQV0N1clpudUhKUmRRVGFUMVYzbkh3PT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MTkxNjlEaDFUM3FUcldNMUZyQ1VSTHlmWStacUZpRGxWN3JOTmpuSmJiRzRIOUxNcW85RWJJUjhlWDFMdXhZUzc=). *中国水土保持科学*. 2013, 11(5):114-122.
 
