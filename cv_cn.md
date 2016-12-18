@@ -31,7 +31,7 @@ GIS专业, 博士研究生
 
 ### 英文期刊:
 
-Ren Z-P_,_ *_Zhu L-J___, Wang B, et al. [Soil hydraulic conductivity as affected by vegetation restoration age on the Loess Plateau](http://dx.doi.org/10.1007/s40333-016-0010-2). _Journal of Arid Land_, 2016, 8(4): 546-555.
+Ren Z-P* ,**_Zhu L-J_**, Wang B, et al. [Soil hydraulic conductivity as affected by vegetation restoration age on the Loess Plateau](http://dx.doi.org/10.1007/s40333-016-0010-2). _Journal of Arid Land_, 2016, 8(4): 546-555.
 
 ### 中文期刊:
 
