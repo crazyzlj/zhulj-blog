@@ -10,6 +10,8 @@ comments: true
 * TOC
 {:toc}
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 # 跨平台文献管理攻略
 
 ## 1.软件
@@ -31,4 +33,4 @@ comments: true
 + Zotfile
     + General settings, 上面填写坚果云同步目录，下面填写Zotero自己的数据目录，最后一级均为`storage`，如`D:\mysync\storage`和`C:\z_reading\zotero\papers\storage`
     + Use subfolder defined by: `\%w|%T|%I|%t\%y`
-    + Renaming rules: \{%a_\}\{%y_\}\{%t\}
+    + Renaming rules: $${%a_}{%y_}{%t}$$
