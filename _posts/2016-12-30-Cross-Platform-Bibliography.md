@@ -33,4 +33,4 @@ comments: true
 + Zotfile
     + General settings, 上面填写坚果云同步目录，下面填写Zotero自己的数据目录，最后一级均为`storage`，如`D:\mysync\storage`和`C:\z_reading\zotero\papers\storage`
     + Use subfolder defined by: `\%w|%T|%I|%t\%y`
-    + Renaming rules: <p>`{%a_}{%y_}{%t}`</p>
+    + Renaming rules: `%a_ %y_ %t`
