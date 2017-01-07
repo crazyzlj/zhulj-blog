@@ -31,6 +31,6 @@ comments: true
     + Citation keys: `[auth:lower]_[journal][>0]_[year]|[auth:lower]_[Title:select,1,1]_[year]`
 
 + Zotfile
-    + General settings, 上面填写坚果云同步目录，下面填写Zotero自己的数据目录，最后一级均为`storage`，如`D:\mysync\storage`和`C:\z_reading\zotero\papers\storage`
+    + General settings, 上面填写Zotero自己的数据目录，下面填写坚果云同步目录，最后一级均为`storage`，如`C:\z_reading\zotero\papers\storage`和`D:\mysync\storage`
     + Use subfolder defined by: `\%w|%T|%I|%t\%y`
     + Renaming rules: `%a_ %y_ %t`
