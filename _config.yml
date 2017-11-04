@@ -1,6 +1,7 @@
 # Jekyll configuration
-
+github_username: crazyzlj
 name: Liang-Jun Zhu
+title: Liang-Jun Zhu | 朱良君 | GISer, Watershed Modeler
 description: Welcome to Liang-Jun Zhu's (朱良君) blog.
 
 
@@ -27,11 +28,15 @@ follow:
 # Set this to your UA-# value, or '' to disable the block completely
 gaaccount: 'UA-75301149-1'
 
-# Set this to your disqus shortname to enable comments. Note that the 'comments'
-# setting below must also be true. Individual posts can override 'comments' to
-# disable on a post-by-post basis
-disqus: 'liangjunzhusblog'
+# Set Comments
 comments: true
+# Deprecated disqus in 11/04/2017
+disqus: 'liangjunzhusblog'
+# use gitment, https://github.com/imsun/gitment
+comment_gitment_repo: crazyzlj.github.io
+comment_gitment_clientId: 596eb00067d481f2b930
+comment_gitment_clientSecret: f34cf9bec7037758d1dfd313f7ed3455a01e262e
+
 paginate: 6
 paginate_path: "page:num"
 excerpt_separator: "<!-- more -->"

@@ -10,9 +10,10 @@
         <div class="article">
             <div class="well">
                 <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.date | date: "%b %-d, %Y" }} - {{ page.title }}</a></h1>
+            <!-- Comments count of Disqus, Deprecated in 11/04/2017
 			{% if site.comments == true and page.comments == true and site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread" data-disqus-identifier="{{ page.url | slugify }}">Comments</a></p>
-            {% endif %}
+            {% endif %}-->
 			{% include post-tags.html %}
             <div class="post-content">
             {{ content }}
@@ -33,25 +34,10 @@
 					</span>
 					<!-- <br> -->
 				</div>
-				<!-- <div id="donate_guide" class="donate_bar center hidden"> -->
                 <div id="donate_guide" class="donate_bar center">
 					<img src="http://zhulj-blog.oss-cn-beijing.aliyuncs.com/aboutMe%2Falipay.jpg" title="支付宝打赏" height="160px" width="160px">
 					<img src="http://zhulj-blog.oss-cn-beijing.aliyuncs.com/aboutMe%2Fwechat.jpg" title="微信打赏" height="160px" width="160px">
-					<!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"> -->
-					<!-- <input type="hidden" name="cmd" value="_s-xclick"> -->
-					<!-- <input type="hidden" name="hosted_button_id" value="975U6UGBFTKG2"> -->
-					<!-- <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_paynow_SM.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online."> -->
-					<!-- <img alt="" border="0" src="https://www.paypalobjects.com/zh_XC/i/scr/pixel.gif" width="1" height="1"> -->
-					<!-- </form> -->
 				</div>
-				<!-- <script type="text/javascript"> -->
-					<!-- document.getElementById('btn_donate').onclick = function(){ -->
-					<!-- $('#donate_board').addClass('hidden'); -->
-					<!-- $('#donate_guide').removeClass('hidden'); -->
-					<!-- } -->
-				<!-- </script> -->
-			<!-- </div> -->
-			
 			<!-- end -->
 			{% if page.comments %}
 			<!-- comments start using disqus-->
@@ -63,15 +49,15 @@
             <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
             <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
             <script>
-            var gitment = new Gitment({
-                owner: 'crazyzlj',
-                repo: 'crazyzlj.github.io',
-                oauth: {
-                    client_id: '596eb00067d481f2b930',
-                    client_secret: 'f34cf9bec7037758d1dfd313f7ed3455a01e262e',
-                },
-            });
-            gitment.render('gitmentContainer');
+                var gitment = new Gitment({
+                    owner: '{{site.github_username}}',
+                    repo: '{{site.comment_gitment_repo}}',
+                    oauth: {
+                        client_id: '{{site.comment_gitment_clientId}}',
+                        client_secret: '{{site.comment_gitment_clientSecret}}',
+                    },
+                });
+                gitment.render('gitmentContainer')
             </script>
 			{% endif %}
 			</div>
