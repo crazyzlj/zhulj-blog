@@ -39,9 +39,9 @@ Lin Wang, ___Liang-Jun Zhu*___, A-Xing Zhu, Jun-Zhi Liu, Lin Shen. [Effect of Sp
 
 **_Zhu L-J_**, Zhang G-H*, Li Z-W, Geng R. [A Laser scanner system for rill morphology measurement based on Linear Structured Light](http://dx.doi.org/10.16089/j.cnki.1008-2786.000093). _Mountain Research_. 2015, 33(6): 770-776.
 
-Hu G-F, Zhang G-H_, _*_Zhu L-J___. [Comparison of three methods to measure depth of overland flow](http://dx.doi.org/10.13961/j.cnki.stbctb.2015.03.034)._ Bulletin of Soil and Water Conservation_. 2015, 35(3):152-156.
+Hu G-F, Zhang G-H*, __Zhu L-J__. [Comparison of three methods to measure depth of overland flow](http://dx.doi.org/10.13961/j.cnki.stbctb.2015.03.034). _Bulletin of Soil and Water Conservation_. 2015, 35(3):152-156.
 
-**_Zhu L-J_**, Zhang G-H*. [Ｒeview of measurement and quantification of surface microtopography](http://www.cnki.net/KCMS/detail/detail.aspx?QueryID=1&CurRec=2&dbcode=CJFQ&dbname=CJFDHIS2&filename=STBC201305018&urlid=&yx=&uid=WEEvREcwSlJHSldSdnQ0THU0Y3lkU3ROZlh3T2ZxSytRVDREbTUzQTJUQXNQV0N1clpudUhKUmRRVGFUMVYzbkh3PT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MTkxNjlEaDFUM3FUcldNMUZyQ1VSTHlmWStacUZpRGxWN3JOTmpuSmJiRzRIOUxNcW85RWJJUjhlWDFMdXhZUzc=). _Science of Soil and Water Conservation_. 2013, 11(5):114-122.
+**_Zhu L-J_**, Zhang G-H*. [ Review of measurement and quantification of surface microtopography](http://www.cnki.net/KCMS/detail/detail.aspx?QueryID=1&CurRec=2&dbcode=CJFQ&dbname=CJFDHIS2&filename=STBC201305018&urlid=&yx=&uid=WEEvREcwSlJHSldSdnQ0THU0Y3lkU3ROZlh3T2ZxSytRVDREbTUzQTJUQXNQV0N1clpudUhKUmRRVGFUMVYzbkh3PT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MTkxNjlEaDFUM3FUcldNMUZyQ1VSTHlmWStacUZpRGxWN3JOTmpuSmJiRzRIOUxNcW85RWJJUjhlWDFMdXhZUzc=). _Science of Soil and Water Conservation_. 2013, 11(5):114-122.
 
 **_Zhu L-J_**, Zhang G-H*, Hu G-F, Wang B. [Study on evaluating Ultrasonic measurement system of overland flow depth](http://dx.doi.org/10.13870/j.cnki.stbcxb.2013.01.044). _Journal of Soil and Water Conservation_. 2013, 27(1):235-239.
 
