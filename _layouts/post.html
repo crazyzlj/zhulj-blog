@@ -55,10 +55,24 @@
 			<!-- end -->
 			{% if page.comments %}
 			<!-- comments start using disqus-->
-			<div id="disqus_thread">
+			<!--<div id="disqus_thread">
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </div>
+            </div> Deprecated in 11/04/2017-->
+            <div id="gitmentContainer"></div>
+            <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+            <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+            <script>
+            var gitment = new Gitment({
+                owner: 'crazyzlj',
+                repo: 'crazyzlj.github.io',
+                oauth: {
+                    client_id: '596eb00067d481f2b930',
+                    client_secret: 'f34cf9bec7037758d1dfd313f7ed3455a01e262e',
+                },
+            });
+            gitment.render('gitmentContainer');
+            </script>
 			{% endif %}
 			</div>
 		</div>
@@ -96,5 +110,5 @@
 		</div>
 	</div>
 </div>
-{% include disqus-comments.html %}
+<!--{% include disqus-comments.html %} Deprecated in 11/04/2017-->
 {% include footer.html %}
