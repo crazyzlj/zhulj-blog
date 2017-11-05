@@ -52,6 +52,7 @@ ___朱良君___, 张光辉*, 任宗萍. [4种土壤入渗测定方法的比较](
 ## 会议
 
 `2017年4月5~9日` ___Liang-Jun Zhu___, A-Xing Zhu, Cheng-Zhi Qin, Jun-Zhi Liu. An Automatic Approach of Prototype-based Fuzzy Slope Positions inference method. AAG Annual Meeting, 2017, Apr. 5-9, Boston, USA.
+
 `2016年8月21~25日` ___Liang-Jun Zhu___, A-Xing Zhu, Cheng-Zhi Qin, Jun-Zhi Liu. An Automatic Approach to Prototype-based Derivation of Fuzzy Slope Positions. 33rd International Geographical Congress, 2016, 8.21-25 Beijing, China.
 `2013年9月23~24日` 基于线结构光技术的细沟形态测量. _2013年中国土壤学会土壤侵蚀与水土保持专业委员会学术年会_, 华中农业大学. （优秀学生报告）
 
