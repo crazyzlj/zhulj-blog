@@ -31,13 +31,15 @@ GIS, 博士研究生
 
 ### 英文期刊:
 
-Wang, L.-J., Zhang, G.-H.*, **_Zhu, L.-J._**, Wang, H., 2017. [Biocrust wetting induced change in soil surface roughness as influenced by biocrust type, coverage and wetting patterns](http://dx.doi.org/10.1016/j.geoderma.2017.06.032). _Geoderma_ 306, 1–9.
+**_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin*, J.-Z. Liu. 2018. [Automatic approach to deriving fuzzy slope positions](https://doi.org/10.1016/j.geomorph.2017.12.024). Geomorphology, doi: 10.1016/j.geomorph.2017.12.024.
 
-Ren, Z.-P.* ,**_Zhu, L.-J._**, Wang. B., et al., 2016. [Soil hydraulic conductivity as affected by vegetation restoration age on the Loess Plateau](http://dx.doi.org/10.1007/s40333-016-0010-2). _Journal of Arid Land_ 8(4): 546-555.
+Wang, L.-J., G.-H. Zhang*, **_L.-J. Zhu_**, H. Wang, 2017. [Biocrust wetting induced change in soil surface roughness as influenced by biocrust type, coverage and wetting patterns](http://dx.doi.org/10.1016/j.geoderma.2017.06.032). _Geoderma_ 306, 1–9.
+
+Ren, Z.-P.* ,**_L.-J. Zhu_**, B. Wang, et al., 2016. [Soil hydraulic conductivity as affected by vegetation restoration age on the Loess Plateau](http://dx.doi.org/10.1007/s40333-016-0010-2). _Journal of Arid Land_ 8(4): 546-555.
 
 ### 中文期刊:
 
-王琳, ___朱良君*___, 朱阿兴, 刘军志, 沈琳. [SWAT模型非点源污染模拟对空间单元划分的响应](http://dx.doi.org/10.3969/j.issn.1000-1700.2016.04.012). _沈阳农业大学学报_, 2016, 47(4): 460-466.
+王琳, ***朱良君****, 朱阿兴, 刘军志, 沈琳. [SWAT模型非点源污染模拟对空间单元划分的响应](http://dx.doi.org/10.3969/j.issn.1000-1700.2016.04.012). _沈阳农业大学学报_, 2016, 47(4): 460-466.
 
 ___朱良君___, 张光辉*, 李振炜, 耿韧. [一种基于线结构光技术的细沟形态测量系统](http://dx.doi.org/10.16089/j.cnki.1008-2786.000093). _山地学报_. 2015, 33(6): 770-776.
 
@@ -49,12 +51,18 @@ ___朱良君___, 张光辉*, 胡国芳, 王兵. [坡面流超声波水深测量�
 
 ___朱良君___, 张光辉*, 任宗萍. [4种土壤入渗测定方法的比较](http://dx.doi.org/10.13961/j.cnki.stbctb.2012.06.050). _水土保持通报_. 2012, 32(6):163-167.
 
+### 软件著作权：
+
+***朱良君***, 秦承志. 模糊坡位自动化提取软件[简称：AutoFuzSlpPos] V1.0. 2016SR066599. https://github.com/lreis2415/AutoFuzSlpPos
+
 ## 会议
 
-`2017年4月5~9日` ___Liang-Jun Zhu___, A-Xing Zhu, Cheng-Zhi Qin, Jun-Zhi Liu. An Automatic Approach of Prototype-based Fuzzy Slope Positions inference method. AAG Annual Meeting, 2017, Apr. 5-9, Boston, USA.
+`2017年11月20~22日` ***朱良君***, 朱阿兴, 秦承志, 刘军志. 2017. 基于领域知识和数据挖掘的模糊坡位提取自动化方法. 2017年全国自然地理学大会, 11.20-22, 南京大学, 南京, 中国.
 
-`2016年8月21~25日` ___Liang-Jun Zhu___, A-Xing Zhu, Cheng-Zhi Qin, Jun-Zhi Liu. An Automatic Approach to Prototype-based Derivation of Fuzzy Slope Positions. 33rd International Geographical Congress, 2016, Aug. 21-25, Beijing, China.
+`2017年4月5~9日` ___Liang-Jun Zhu___, A-Xing Zhu, Cheng-Zhi Qin, Jun-Zhi Liu. 2017. An Automatic Approach of Prototype-based Fuzzy Slope Positions inference method. AAG Annual Meeting, Apr. 5-9, Boston, USA.
+
+`2016年8月21~25日` ___Liang-Jun Zhu___, A-Xing Zhu, Cheng-Zhi Qin, Jun-Zhi Liu. 2016. An Automatic Approach to Prototype-based Derivation of Fuzzy Slope Positions. 33rd International Geographical Congress, Aug. 21-25, Beijing, China.
 
 `2013年9月23~24日` 基于线结构光技术的细沟形态测量. _2013年中国土壤学会土壤侵蚀与水土保持专业委员会学术年会_, 华中农业大学. （优秀学生报告）
 
-`最近更新：2017年11月`
+`最近更新：2018年1月`
