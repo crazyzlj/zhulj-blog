@@ -39,8 +39,8 @@ Ren, Z.-P.* , **_L.-J. Zhu_**, B. Wang, S.-D. Cheng. 2016. [Soil hydraulic condu
 
 ## Conferences
 
-`4/5/2017` **_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin, J.-Z. Liu. An Automatic Approach of Prototype-based Fuzzy Slope Positions inference method. AAG Annual Meeting, 2017, Apr. 5-9, Boston, USA.
+`4/5/2017` **_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin, J.-Z. Liu. An automatic approach of prototype-based fuzzy slope positions. AAG Annual Meeting, 2017, Apr. 5-9, Boston, USA.
 
-`8/21/2016` **_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin, J.-Z. Liu. An Automatic Approach to Prototype-based Derivation of Fuzzy Slope Positions. 33rd International Geographical Congress, 2016, Aug. 21-25, Beijing, China.
+`8/21/2016` **_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin, J.-Z. Liu. Automatic approach for deriving fuzzy slope positions. 33rd International Geographical Congress, 2016, Aug. 21-25, Beijing, China.
 
 `Updated: Jan. 2018`

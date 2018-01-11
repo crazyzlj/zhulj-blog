@@ -61,9 +61,9 @@ ___朱良君___, 张光辉*, 任宗萍. [4种土壤入渗测定方法的比较](
 
 `2017年11月20~22日` ***朱良君***, 朱阿兴, 秦承志, 刘军志. 2017. 基于领域知识和数据挖掘的模糊坡位提取自动化方法. 2017年全国自然地理学大会, 11.20-22, 南京大学, 南京, 中国.
 
-`2017年4月5~9日` **_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin, J.-Z. Liu. 2017. An Automatic Approach of Prototype-based Fuzzy Slope Positions inference method. AAG Annual Meeting, Apr. 5-9, Boston, USA.
+`2017年4月5~9日` **_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin, J.-Z. Liu. 2017. An automatic approach of prototype-based fuzzy slope positions. AAG Annual Meeting, Apr. 5-9, Boston, USA.
 
-`2016年8月21~25日` **_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin, J.-Z. Liu. 2016. An Automatic Approach to Prototype-based Derivation of Fuzzy Slope Positions. 33rd International Geographical Congress, Aug. 21-25, Beijing, China.
+`2016年8月21~25日` **_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin, J.-Z. Liu. 2016. Automatic approach for deriving fuzzy slope positions. 33rd International Geographical Congress, Aug. 21-25, Beijing, China.
 
 `2013年9月23~24日` 基于线结构光技术的细沟形态测量. _2013年中国土壤学会土壤侵蚀与水土保持专业委员会学术年会_, 华中农业大学. （优秀学生报告）
 
