@@ -21,6 +21,9 @@ comments: true
 
 之后的数据更新我会在代码中修复这一bug，**特此勘误**！
 
+## 0.2.关于数据更新频率
+可根据官网的数据更新频率实时更新，一般来讲延迟半年，即2018年6月可获取最新至2017年12月31日的数据。
+
 
 # 1 需求分析
 
@@ -333,7 +336,13 @@ def QueryDatabase(dbpath, savePath, stationIDs, startTime, endTime):
 
 **图4. SURF_CLI_CHN_MUL_DAY_V3.0数据库截图**
 
-+ ~~如有需要帮忙查询数据，请在本博客下面留言~~。
 
-> 声明：自从本博客发表以来，数十位同学、老师、同行发邮件表示对该数据集的兴趣，希望能够免费提供数据，我都一一应助了。但是，我越来越感觉到，这逐渐背离了我开博客的初衷，我的初衷是大家能够通过阅读文章找到方法，自己亲自去实践，哪怕没有权限下载到原始数据，也会想办法找到元数据了解情况，而不是一味地看到标题，拉至页面底端找联系方式。
-> 因此，我决定不再继续提供数据查询、下载服务，如需数据，请通过官方途径进行申请，凡查询数据之邮件概不回复，谢谢合作！
+# 5 数据获取
+
+自从本博客发表以来，已经累计帮助了几十位同学、老师、同行。如果对该数据集有兴趣，我将继续有偿提供，发邮件的时候请注明需要哪些站点、哪些时间段。
+
+另外，欢迎技术交流。
+
+Github: [创建数据库](https://github.com/crazyzlj/Python/blob/master/HydroDataDownload/CreateDatabase_SURF_CLI_CHN_MUL_DAY.py)、[查询数据库](https://github.com/crazyzlj/Python/blob/master/HydroDataDownload/ReadDatabase_SURF_CLI_CHN_MUL_DAY.py)
+
+Email: crazyzlj@gmail.com
