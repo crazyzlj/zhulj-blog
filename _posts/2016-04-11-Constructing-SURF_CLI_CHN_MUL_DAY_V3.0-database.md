@@ -13,13 +13,9 @@ comments: true
 
 # 0 更新说明
 ## 0.1.关于时制和日界的问题（2017-7-25）
-该数据集采用的是“北京时，日界20时”，也就是说记录为“2013-02-04”的数据应为“2013-02-04 20:00:00”，是“2013-02-03 20:00:01 ~ 2013-02-04 20:00:00 UTC+8” （当然，认为是“2013-02-03 20:00:00 ~ 2013-02-04 19:59:59 UTC+8”也可）这段时间的属性值。
+该数据集采用的是“北京时，日界20时”，也就是说记录为“2013-02-04”的数据应为“2013-02-04 20:00:00”，是“2013-02-03 20:00:01 ~ 2013-02-04 20:00:00 UTC+8” （当然，认为是“2013-02-03 20:00:00 ~ 2013-02-04 19:59:59 UTC+8”也可）这段时间的属性值，转换为UTC时间为“2013-02-04 12:00:00”。
 
-转换为UTC时间为“2013-02-04 12:00:00”。
-
-然而，由于原始数据格式为“YYYY MM DD”，且我最初做这套数据集的时候没有关注到这一点，导致所有的输出时间数据格式为“2013-02-04 00:00:00”，为了不影响使用，建议在输出之后统一将“00:00:00”修改为“20:00:00”，并在使用时注意这是“北京时 UTC+8”！
-
-之后的数据更新我会在代码中修复这一bug，**特此勘误**！
+原始数据格式为“YYYY MM DD”，为了方便使用，数据库中统一将时间保存为“**YYYY MM DD 20:00:00**”，即“**北京时 UTC+8**”！
 
 ## 0.2.关于数据更新频率
 可根据官网的数据更新频率实时更新，一般来讲延迟半年，即2018年6月可获取最新至2017年12月31日的数据。
@@ -29,7 +25,7 @@ comments: true
 
 > “[中国地面气候资料日值数据集(V3.0)](http://data.cma.cn/dataService/index/datacode/SURF_CLI_CHN_MUL_DAY_V3.0.html "SURF_CLI_CHN_MUL_DAY_V3.0")”包含了中国824个基准、基本气象站1951年1月以来本站气压、气温、降水量、蒸发量、相对湿度、风向风速、日照时数和0cm地温要素的日值数据。数据量为7.63GB。
 
-降水、气温、风速、相对湿度等气象资料对流域建模是至关重要的数据，[中国气象数据网](http://data.cma.cn/)为我们提供了良好的数据共享平台。其中，最常用的当属中国地面气候资料日值数据集(V3.0)，其站点分布如图1所示（实际下载下来是839个）。
+降水、气温、风速、相对湿度等气象资料对流域建模是至关重要的数据，[中国气象数据网](http://data.cma.cn/)为我们提供了良好的数据共享平台。其中，最常用的当属中国地面气候资料日值数据集(V3.0)，其站点分布如图1所示（实际下载下来是839个），目前数据已更新至2017年12月。
 
 <!-- more -->
 
@@ -95,7 +91,7 @@ class climateStation:
         self.lon       = lon   ## longitude, float degree
         self.alti      = alti  ## altitude, as ORIGIN: unit 0.1 meter
     def printStation(self):
-        print "%s, %.3f, %.3f, %.1f" % (self.StationID, self.lat, self.lon, self.alti)
+        print('%s, %.3f, %.3f, %.1f' % (self.StationID, self.lat, self.lon, self.alti)
 ```
 
 + 随后设计子类`climateFeatures`，用于保存每个站点所有的气象数据，其中`initValues()`方法用于添加一天记录时进行赋初值，`assignValuesByFtCode(idx, ftCode, ClimValues)`方法根据索引`idx`、气象数据类型`ftCode`和数据值`ClimValues`对当天数据进行修改，`check()`方法用于检查该站点数据是否具有一致条数，`printFeature()`方法用于打印该站点信息：
@@ -114,6 +110,9 @@ class climateFeatures(climateStation):
         climateStation.__init__(self, ID, lat, lon, alti)
         self.count     = 0
         self.date      = []    ## date
+        self.avgPRS    = []    ## average pressure of the day, ORIGIN: unit 0.1 hPa
+        self.maxPRS    = []    ## maximum pressure of the day, ORIGIN: unit 0.1 hPa
+        self.minPRS    = []    ## minimum pressure of the day, ORIGIN: unit 0.1 hPa
         self.avgTEM    = []    ## average temperature of the day, ORIGIN: unit 0.1 degree
         self.maxTEM    = []    ## maximum temperature of the day
         self.minTEM    = []    ## minimum temperature of the day
@@ -130,8 +129,16 @@ class climateFeatures(climateStation):
         self.extWIN    = []    ## extreme wind speed
         self.extWINASP = []    ## aspect of extreme wind speed
         self.SSD       = []    ## sunshine duration hours, ORIGIN: 0.1 hour
+        self.avgGST    = []    ## average ground surface temperature of the day, ORIGIN: 0.1 degree
+        self.maxGST    = []    ## maximum ground surface temperature of the day, ORIGIN: 0.1 degree
+        self.minGST    = []    ## minimum ground surface temperature of the day, ORIGIN: 0.1 degree
+        
+        
     def initValues(self):
         self.count += 1
+        self.avgPRS.append(9999)
+        self.maxPRS.append(9999)
+        self.minPRS.append(9999)
         self.avgTEM.append(9999)
         self.maxTEM.append(9999)
         self.minTEM.append(9999)
@@ -148,9 +155,17 @@ class climateFeatures(climateStation):
         self.extWIN.append(9999)
         self.extWINASP.append(9999)
         self.SSD.append(9999)
+        self.avgGST.append(9999)
+        self.maxGST.append(9999)
+        self.minGST.append(9999)
+        
     def assignValuesByFtCode(self, idx, ftCode, ClimValues):
-        ## ['TEM', 'RHU', 'PRE', 'EVP', 'WIN', 'SSD']
-        if ftCode == 'TEM' and len(ClimValues) == 3:
+        ## ['PRS', 'TEM', 'RHU', 'PRE', 'EVP', 'WIN', 'SSD', 'GST']
+        if ftCode == 'PRS' and len(ClimValues) == 3:
+            self.avgPRS[idx] = ClimValues[0]
+            self.maxPRS[idx] = ClimValues[1]
+            self.minPRS[idx] = ClimValues[2]
+        elif ftCode == 'TEM' and len(ClimValues) == 3:
             self.avgTEM[idx] = ClimValues[0]
             self.maxTEM[idx] = ClimValues[1]
             self.minTEM[idx] = ClimValues[2]
@@ -172,20 +187,31 @@ class climateFeatures(climateStation):
             self.extWINASP[idx] = ClimValues[4]
         elif ftCode == 'SSD' and len(ClimValues) == 1:
             self.SSD[idx] = ClimValues[0]
+        elif ftCode == 'GST' and len(ClimValues) == 3:
+            self.avgGST[idx] = ClimValues[0]
+            self.maxGST[idx] = ClimValues[1]
+            self.minGST[idx] = ClimValues[2]
         else:
             exit(1)
     def check(self):
-        if self.count==len(self.date)==len(self.maxTEM)==len(self.minTEM)\
-            ==len(self.avgTEM)==len(self.avgRHU)==len(self.minRHU)==len(self.PRE208)==len(self.PRE820)\
-            ==len(self.PRE)==len(self.smEVP)==len(self.lgEVP)==len(self.avgWIN)==len(self.maxWIN)\
-            ==len(self.maxWINASP)==len(self.extWIN)==len(self.extWINASP)==len(self.SSD):
+        if self.count == len(self.date) \
+                == len(self.avgPRS) == len(self.maxPRS) == len(self.minPRS) \
+                == len(self.maxTEM) == len(self.minTEM) == len(self.avgTEM) \
+                == len(self.avgRHU) == len(self.minRHU) \
+                == len(self.PRE208) == len(self.PRE820) == len(self.PRE) \
+                == len(self.smEVP) == len(self.lgEVP) \
+                == len(self.avgWIN) == len(self.maxWIN) == len(self.maxWINASP) \
+                == len(self.extWIN) == len(self.extWINASP) == len(self.SSD) \
+                == len(self.avgGST) == len(self.maxGST) == len(self.minGST):
             return True
         else:
             return False
     def printFeature(self):
-        print "%s, lat=%.3f, lon=%.3f, alti=%.1f, count=%d, date=%s, TEM=%s, RHU=%s, PRE=%s, EVP=%s, WIN=%s, \
-		SSD=%s" % (self.StationID, self.lat, self.lon, self.alti, self.count, self.date, \
-		self.avgTEM, self.avgRHU, self.PRE, self.lgEVP, self.avgWIN, self.SSD)
+        print('%s, lat=%.3f, lon=%.3f, alti=%.1f, count=%d, date=%s, PRS=%s, TEM=%s,'
+              ' RHU=%s, PRE=%s, EVP=%s, WIN=%s, SSD=%s, GST=%s' %
+              (self.StationID, self.lat, self.lon, self.alti, self.count, self.date,
+               self.avgPRS, self.avgTEM, self.avgRHU, self.PRE,
+               self.lgEVP, self.avgWIN, self.SSD, self.avgGST))
 ```
 
 ### 2.2.2 写入SQLite数据库
@@ -214,6 +240,9 @@ def writeClimateDataToDatabase(allClimData, dbpath):
         create_climdata_tab_sql = '''CREATE TABLE IF NOT EXISTS %s (
                         stID varchar(5) NOT NULL,
                         date datetime DEFAULT NULL,
+                        avgPRS int DEFAULT 9999,
+                        maxPRS int DEFAULT 9999,
+                        minPRS int DEFAULT 9999,
                         avgTEM int DEFAULT 9999,
                         maxTEM int DEFAULT 9999,
                         minTEM int DEFAULT 9999,
@@ -229,21 +258,43 @@ def writeClimateDataToDatabase(allClimData, dbpath):
                         maxWINASP int DEFAULT 9999,
                         extWIN int DEFAULT 9999,
                         extWINASP int DEFAULT 9999,
-                        SSD int DEFAULT 9999
+                        SSD int DEFAULT 9999,
+                        avgGST int DEFAULT 9999,
+                        maxGST int DEFAULT 9999,
+                        minGST int DEFAULT 9999
                         )''' % stationTabName
         #print create_climdata_tab_sql
         ### create current station climate data table
         createTable(create_climdata_tab_sql, conn)
         ### insert station information
-        for i in range(allClimData[station].count):
-            save_sql = '''INSERT INTO %s values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''' % stationTabName
-            dataRow = [allClimData[station].StationID, allClimData[station].date[i], allClimData[station].avgTEM[i], \
-                       allClimData[station].maxTEM[i], allClimData[station].minTEM[i], allClimData[station].avgRHU[i], \
-                       allClimData[station].minRHU[i], allClimData[station].PRE208[i], allClimData[station].PRE820[i], \
-                       allClimData[station].PRE[i], allClimData[station].smEVP[i], allClimData[station].lgEVP[i], \
-                       allClimData[station].avgWIN[i], allClimData[station].maxWIN[i], allClimData[station].maxWINASP[i], \
-                       allClimData[station].extWIN[i], allClimData[station].extWINASP[i], allClimData[station].SSD[i]]
-            #print dataRow
+        curClimateData = allClimData[station]
+        fetchone_sql = 'SELECT * FROM %s WHERE stID = ? AND date = ?' % stationTabName
+        update_sql = '''UPDATE %s SET avgPRS = ?, maxPRS = ?, minPRS = ?, \
+                        avgTEM = ?, maxTEM = ?, minTEM = ?, avgRHU = ?, minRHU = ?,\
+                        PRE208 = ?, PRE820 = ?, PRE = ?, \
+                        smEVP = ?, lgEVP = ?, avgWIN = ?, maxWIN = ?,\
+                        maxWINASP = ?, extWIN = ?, extWINASP = ?, SSD = ?,\
+                        avgGST = ?, maxGST = ?, minGST = ? WHERE stID = ? AND date = ?''' \
+                     % stationTabName
+        save_sql = '''INSERT INTO %s values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''' % stationTabName
+        for i in range(curClimateData.count):
+            # If the current station record exists, then update it, else insert one.
+            uniqueitem = [curClimateData.StationID, curClimateData.date[i]]
+            dataRow = [curClimateData.StationID, curClimateData.date[i],
+                       curClimateData.avgPRS[i], curClimateData.maxPRS[i], curClimateData.minPRS[i],
+                       curClimateData.avgTEM[i], curClimateData.maxTEM[i], curClimateData.minTEM[i],
+                       curClimateData.avgRHU[i], curClimateData.minRHU[i],
+                       curClimateData.PRE208[i], curClimateData.PRE820[i],
+                       curClimateData.PRE[i], curClimateData.smEVP[i], curClimateData.lgEVP[i],
+                       curClimateData.avgWIN[i], curClimateData.maxWIN[i],
+                       curClimateData.maxWINASP[i],
+                       curClimateData.extWIN[i], curClimateData.extWINASP[i],
+                       curClimateData.SSD[i],
+                       curClimateData.avgGST[i], curClimateData.maxGST[i], curClimateData.minGST[i]]
+            # print(dataRow)
+            if fetchOneRecord(conn, fetchone_sql, uniqueitem):
+                updateRecord(conn, update_sql, dataRow[2:] + uniqueitem)
+                continue
             saveRecord(conn, save_sql, dataRow)
     conn.commit()
     conn.close()
@@ -339,7 +390,7 @@ def QueryDatabase(dbpath, savePath, stationIDs, startTime, endTime):
 
 # 5 数据获取
 
-自从本博客发表以来，已经累计帮助了几十位同学、老师、同行。如果对该数据集有兴趣，我将继续有偿提供，发邮件的时候请注明需要哪些站点、哪些时间段。
+自从本博客发表以来，已经累计帮助了几十位同学、老师、同行。如果对该数据集有兴趣，可邮件联系。
 
 另外，欢迎技术交流。
 
