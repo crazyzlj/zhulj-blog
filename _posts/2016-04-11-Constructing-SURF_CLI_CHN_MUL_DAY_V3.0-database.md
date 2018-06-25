@@ -23,7 +23,7 @@ comments: true
 
 # 1 需求分析
 
-> “[中国地面气候资料日值数据集(V3.0)](http://data.cma.cn/dataService/index/datacode/SURF_CLI_CHN_MUL_DAY_V3.0.html "SURF_CLI_CHN_MUL_DAY_V3.0")”包含了中国824个基准、基本气象站1951年1月以来本站气压、气温、降水量、蒸发量、相对湿度、风向风速、日照时数和0cm地温要素的日值数据。数据量为7.63GB。
+> “[中国地面气候资料日值数据集(V3.0)](http://data.cma.cn/dataService/index/datacode/SURF_CLI_CHN_MUL_DAY_V3.0.html "SURF_CLI_CHN_MUL_DAY_V3.0")”包含了中国824个基准、基本气象站1951年1月以来本站气压、气温、降水量、蒸发量、相对湿度、风向风速、日照时数和0cm地温要素的日值数据。截至2017年12月31日的数据量为8.35 GB。
 
 降水、气温、风速、相对湿度等气象资料对流域建模是至关重要的数据，[中国气象数据网](http://data.cma.cn/)为我们提供了良好的数据共享平台。其中，最常用的当属中国地面气候资料日值数据集(V3.0)，其站点分布如图1所示（实际下载下来是839个），目前数据已更新至2017年12月。
 
@@ -379,9 +379,9 @@ def QueryDatabase(dbpath, savePath, stationIDs, startTime, endTime):
 
 # 4 总结
 
-+ 就是为了简单实现这么个功能，代码没进行优化设计，接近8G的数据读取并存入一个数据字典中，非常耗时（共32.3小时完成）。
++ 就是为了简单实现这么个功能，代码没进行优化设计，8G多的数据读取并存入一个数据字典中，非常耗时。
 
-+ 最终得到的SQLite数据库文件大小为**1.23** GB，SQLite打开如图4。
++ 最终得到的SQLite数据库文件大小为**1.61** GB，SQLite打开如图4。
 
 <img src="http://zhulj-blog.oss-cn-beijing.aliyuncs.com/climate%2Fsqlite-jietu.jpg" width="600">
 
