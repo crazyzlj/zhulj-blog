@@ -13,6 +13,8 @@ GIS, 博士研究生
 <i class="fa fa-archive">
 </i> <a href="https://www.researchgate.net/profile/Liangjun_Zhu">ResearchGate</a></div>
 
+[下载完整PDF版简历](http://zhulj-blog.oss-cn-beijing.aliyuncs.com/CV/cv_ljzhu_chs.pdf "CV-SimlifiedChinese")
+
 ## 教育经历
 
 `2014-` 博士在读, GIS, **中国科学院地理科学与资源研究所**
@@ -31,9 +33,9 @@ GIS, 博士研究生
 
 ### 英文期刊:
 
-Qin, C.-Z., H.-R. Gao,  **_L.-J. Zhu*_**, A.-X. Zhu, J.-Z. Liu, H. Wu. Spatial optimization of watershed best management practices based on slope position units. _Journal of Soil and Water Conservation_, accepted.
+Qin, C.-Z., H.-R. Gao,  **_L.-J. Zhu*_**, A-X. Zhu, J.-Z. Liu, H. Wu. [Spatial optimization of watershed best management practices based on slope position units](https://doi.org/10.2489/jswc.73.5.504). _Journal of Soil and Water Conservation_ 73(5), 504-517.
 
-**_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin*, J.-Z. Liu. 2018. [Automatic approach to deriving fuzzy slope positions](https://doi.org/10.1016/j.geomorph.2017.12.024). _Geomorphology_ 304, 173-183.
+**_Zhu, L.-J._**, A-X. Zhu, C.-Z. Qin*, J.-Z. Liu. 2018. [Automatic approach to deriving fuzzy slope positions](https://doi.org/10.1016/j.geomorph.2017.12.024). _Geomorphology_ 304, 173-183.
 
 Wang, L.-J., G.-H. Zhang*, **_L.-J. Zhu_**, H. Wang. 2017. [Biocrust wetting induced change in soil surface roughness as influenced by biocrust type, coverage and wetting patterns](http://dx.doi.org/10.1016/j.geoderma.2017.06.032). _Geoderma_ 306, 1-9.
 
@@ -61,10 +63,10 @@ ___朱良君___, 张光辉*, 任宗萍. [4种土壤入渗测定方法的比较](
 
 `2017年11月20~22日` ***朱良君***, 朱阿兴, 秦承志, 刘军志. 2017. 基于领域知识和数据挖掘的模糊坡位提取自动化方法. 2017年全国自然地理学大会, 11.20-22, 南京大学, 南京, 中国.
 
-`2017年4月5~9日` **_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin, J.-Z. Liu. 2017. An automatic approach of prototype-based fuzzy slope positions. AAG Annual Meeting, Apr. 5-9, Boston, USA.
+`2017年4月5~9日` **_Zhu, L.-J._**, A-X. Zhu, C.-Z. Qin, J.-Z. Liu. 2017. An automatic approach of prototype-based fuzzy slope positions. AAG Annual Meeting, Apr. 5-9, Boston, USA.
 
-`2016年8月21~25日` **_Zhu, L.-J._**, A.-X. Zhu, C.-Z. Qin, J.-Z. Liu. 2016. Automatic approach for deriving fuzzy slope positions. 33rd International Geographical Congress, Aug. 21-25, Beijing, China.
+`2016年8月21~25日` **_Zhu, L.-J._**, A-X. Zhu, C.-Z. Qin, J.-Z. Liu. 2016. Automatic approach for deriving fuzzy slope positions. 33rd International Geographical Congress, Aug. 21-25, Beijing, China.
 
 `2013年9月23~24日` 基于线结构光技术的细沟形态测量. _2013年中国土壤学会土壤侵蚀与水土保持专业委员会学术年会_, 华中农业大学. （优秀学生报告）
 
-`最近更新：2018年1月`
+`最近更新：2018年9月`
